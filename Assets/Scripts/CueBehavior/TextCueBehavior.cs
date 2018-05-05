@@ -10,7 +10,11 @@ public class TextCueBehavior : CueBehavior
     public GameObject resText;
     public GameObject attText;
 
-   
+    public override void Start()
+    {
+        base.Start();
+        GetComponent<Renderer>().material.color = Color.black;
+    }
 
     public override void SetNeedsAssist(bool needsAssist)
     {

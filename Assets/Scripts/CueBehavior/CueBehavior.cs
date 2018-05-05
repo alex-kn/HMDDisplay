@@ -21,9 +21,14 @@ public abstract class CueBehavior : MonoBehaviour {
 
     }
 
+    public void Update()
+    {
+        Debug.Log(needsAssist);
+    }
+
     public virtual void SetNeedsAssist(bool needsAssist)
     {
-        Debug.Log("Assist");
+        if (this.needsAssist == needsAssist) return;
         this.needsAssist = needsAssist;
         if (needsAssist)
         {
@@ -35,7 +40,7 @@ public abstract class CueBehavior : MonoBehaviour {
 
     public virtual void SetDoNotInterrupt(bool doNotInterrupt)
     {
-        Debug.Log("DnD");
+        if (this.doNotInterrupt == doNotInterrupt) return;
         this.doNotInterrupt = doNotInterrupt;
         if (doNotInterrupt)
         {
@@ -43,11 +48,15 @@ public abstract class CueBehavior : MonoBehaviour {
             SetExpectsResponse(false);
             SetIsAttentive(false);
         }
+        else
+        {
+            SetIsAttentive(true);
+        }
     }
 
     public virtual void SetExpectsResponse(bool expectsResponse)
     {
-        Debug.Log("Respond");
+        if (this.expectsResponse == expectsResponse) return;
         this.expectsResponse = expectsResponse;
         if (expectsResponse)
         {
@@ -62,7 +71,7 @@ public abstract class CueBehavior : MonoBehaviour {
 
     public virtual void SetIsAttentive(bool isAttentive)
     {
-        Debug.Log("Attentive");
+        if (this.isAttentive == isAttentive) return;
         this.isAttentive = isAttentive;
         if(isAttentive)
         {
@@ -72,30 +81,35 @@ public abstract class CueBehavior : MonoBehaviour {
         {
             SetExpectsResponse(false);
             SetNeedsAssist(false);
+            SetDoNotInterrupt(true);
         }
+    }
+
+    public void ResetCues()
+    {
+        SetNeedsAssist(false);
+        SetIsAttentive(false);
+        SetDoNotInterrupt(false);
+        SetExpectsResponse(false);
     }
 
     public void ToggleNeedsAssist()
     {
-        needsAssist = !needsAssist;
-        SetNeedsAssist(needsAssist);
+        SetNeedsAssist(!needsAssist);
     }
 
     public void ToggleDoNotInterrupt()
     {
-        doNotInterrupt = !doNotInterrupt;
-        SetDoNotInterrupt(doNotInterrupt);
+        SetDoNotInterrupt(!doNotInterrupt);
     }
 
     public void ToggleExpectsResponse()
     {
-        expectsResponse = !expectsResponse;
-        SetExpectsResponse(expectsResponse);
+        SetExpectsResponse(!expectsResponse);
     }
 
     public void ToggleIsAttentive()
     {
-        isAttentive = !isAttentive;
-        SetIsAttentive(isAttentive);
+        SetIsAttentive(!isAttentive);
     }
 }
