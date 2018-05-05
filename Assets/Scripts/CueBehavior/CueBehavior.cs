@@ -8,10 +8,10 @@ public abstract class CueBehavior : MonoBehaviour {
 
     protected FixationPointMovement fixationPointMovement;
 
-    private bool needsAssist = false;
-    private bool doNotInterrupt = false;
-    private bool expectsResponse = false;
-    private bool isAttentive = false;
+    public bool needsAssist = false;
+    public bool doNotInterrupt = false;
+    public bool expectsResponse = false;
+    public bool isAttentive = false;
 
 
     public virtual void Start()

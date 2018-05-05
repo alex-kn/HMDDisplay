@@ -11,6 +11,12 @@ public class CueClickController : MonoBehaviour
     public Button respondToMeButton;
     public Button iAmAttentiveButton;
 
+    public Button switchRepresentationButton;
+
+    private CueBehavior cueBehavior;
+
+    public GameObject[] representations;
+    private int activeRepIndex;
 
     void Start()
     {
@@ -18,29 +24,66 @@ public class CueClickController : MonoBehaviour
         doNotInterruptMe.onClick.AddListener(DoNotInterrupt);
         respondToMeButton.onClick.AddListener(RespondToMe);
         iAmAttentiveButton.onClick.AddListener(IAmAttentive);
+        switchRepresentationButton.onClick.AddListener(SwitchRepresentation);
+        activeRepIndex = 0;
+        SwitchRepresentation();
+        cueBehavior = GetCueBehavior();
+    }
+
+    private void LateUpdate()
+    {
+        UpdateButtonColor(assistMeButton, cueBehavior.needsAssist);
+        UpdateButtonColor(doNotInterruptMe, cueBehavior.doNotInterrupt);
+        UpdateButtonColor(respondToMeButton, cueBehavior.expectsResponse);
+        UpdateButtonColor(iAmAttentiveButton, cueBehavior.isAttentive);
+    }
+
+    private void UpdateButtonColor(Button button, bool value)
+    {
+        if (value)
+        {
+            ColorBlock cb = button.colors;
+            cb.normalColor = Color.green;
+            cb.highlightedColor = Color.green;
+            button.colors = cb;
+        }
+        else
+        {
+            ColorBlock cb = button.colors;
+            cb.normalColor = Color.white;
+            cb.highlightedColor = Color.white;
+            button.colors = cb;
+        }
+    }
+
+    void SwitchRepresentation()
+    {
+        representations[activeRepIndex].SetActive(false);
+        activeRepIndex = (activeRepIndex + 1) % representations.Length;
+        representations[activeRepIndex].SetActive(true);
     }
 
     void AssistMe()
     {
-        CueBehavior cueBehavior = GetCueBehavior();
+        cueBehavior = GetCueBehavior();
         cueBehavior.ToggleNeedsAssist();
     }
 
     void DoNotInterrupt()
     {
-        CueBehavior cueBehavior = GetCueBehavior();
+        cueBehavior = GetCueBehavior();
         cueBehavior.ToggleDoNotInterrupt();
     }
 
     void RespondToMe()
     {
-        CueBehavior cueBehavior = GetCueBehavior();
+        cueBehavior = GetCueBehavior();
         cueBehavior.ToggleExpectsResponse();
     }
 
     void IAmAttentive()
     {
-        CueBehavior cueBehavior = GetCueBehavior();
+        cueBehavior = GetCueBehavior();
         cueBehavior.ToggleIsAttentive();
     }
 
