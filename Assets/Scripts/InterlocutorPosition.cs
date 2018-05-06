@@ -2,25 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InterlocutorPosition : MonoBehaviour {
+public class InterlocutorPosition : MonoBehaviour
+{
 
     bool isAndroid = false;
     Vector3 origPosition;
 
-    float speed;
+    Camera cam;
+    public int phoneCameraWidth = 640;
+    public int phoneCameraHeight = 480;
 
+    public GameObject interlocPos;
+
+    float[] lastPosition;
+    float speed;
     AndroidJavaObject faceTracker;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
+        cam = GetComponent<Camera>();
         Debug.Log("Starting InterlocutorPosition, checking for Android device");
         origPosition = transform.localPosition;
-        
+
         isAndroid = Application.platform == RuntimePlatform.Android;
-        speed = 30f;
+        speed = 100f;
 
         Debug.Log(origPosition);
-        if(isAndroid)
+        if (isAndroid)
         {
             Debug.Log("Android found.");
 
@@ -29,22 +38,22 @@ public class InterlocutorPosition : MonoBehaviour {
 
             faceTracker = new AndroidJavaObject("ak.hmddisplay.mobilevision.HMDFaceTracker", activity);
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (isAndroid)
         {
-            float step = speed * Time.deltaTime;
-
-            float[] query = faceTracker.Call<float[]>("query");
-            //pos = new Vector3(query[0] * 0.02646f + phoneCameraOffsetX, -query[1] * 0.02646f + phoneCameraOffsetY, 0);
-            //Vector3 newPosition = origPosition + pos;
-
-            Vector3 rlCameraVec = new Vector3(query[0] / 100, -query[1] / 80, 0);
-            Vector3 distPosition = rlCameraVec + origPosition;
-
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, distPosition, step);
+            lastPosition = faceTracker.Call<float[]>("query");
+      
         }
+        else
+        {
+            lastPosition = new float[] { 640, 480 };
+        }
+        Vector3 p = cam.ScreenToWorldPoint(new Vector3((lastPosition[0] / phoneCameraWidth) * cam.pixelWidth, cam.pixelHeight -(lastPosition[1] / phoneCameraHeight) * cam.pixelHeight, cam.nearClipPlane));
+        float step = speed * Time.deltaTime;
+        interlocPos.transform.position = Vector3.MoveTowards(interlocPos.transform.position, p, step);
     }
 }
