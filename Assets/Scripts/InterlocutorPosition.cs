@@ -6,15 +6,10 @@ public class InterlocutorPosition : MonoBehaviour {
 
     bool isAndroid = false;
     Vector3 origPosition;
-    Vector3 pos;
 
-    Transform target;
     float speed;
 
     AndroidJavaObject faceTracker;
-
-    float phoneCameraOffsetX = 0f;
-    float phoneCameraOffsetY = 0f;
 
 	// Use this for initialization
 	void Start () {
@@ -50,17 +45,6 @@ public class InterlocutorPosition : MonoBehaviour {
             Vector3 distPosition = rlCameraVec + origPosition;
 
             transform.localPosition = Vector3.MoveTowards(transform.localPosition, distPosition, step);
-
-
-            //if (distPosition != null || distPosition.Equals(new Vector3(0, 0, 0)))
-            //{
-
-                //Vector3 currentPosition = transform.localPosition;
-                //float p = 0.05f;
-                //transform.localPosition = currentPosition + (distPosition - currentPosition) * p;
-            //}
-
-            //transform.position = newPosition;
         }
     }
 }

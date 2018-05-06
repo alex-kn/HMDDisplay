@@ -26,6 +26,9 @@ public class CueClickController : MonoBehaviour
         iAmAttentiveButton.onClick.AddListener(IAmAttentive);
         switchRepresentationButton.onClick.AddListener(SwitchRepresentation);
         activeRepIndex = 0;
+        foreach(GameObject representation in representations){
+            representation.SetActive(false);
+        }
         SwitchRepresentation();
         cueBehavior = GetCueBehavior();
     }
