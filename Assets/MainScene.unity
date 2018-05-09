@@ -1555,7 +1555,7 @@ Prefab:
     - target: {fileID: 102703137017491916, guid: 0c5986fdb5ae4474c823925c0b1854da,
         type: 2}
       propertyPath: m_Text
-      value: I AM ATTENTIVE
+      value: Attentive
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
@@ -1606,7 +1606,7 @@ Prefab:
     - target: {fileID: 102703137017491916, guid: 0c5986fdb5ae4474c823925c0b1854da,
         type: 2}
       propertyPath: m_Text
-      value: HELP!
+      value: Help
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
@@ -2083,7 +2083,7 @@ Prefab:
     - target: {fileID: 102703137017491916, guid: 0c5986fdb5ae4474c823925c0b1854da,
         type: 2}
       propertyPath: m_Text
-      value: DND
+      value: Don't interrupt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
@@ -3075,7 +3075,7 @@ Prefab:
     - target: {fileID: 102703137017491916, guid: 0c5986fdb5ae4474c823925c0b1854da,
         type: 2}
       propertyPath: m_Text
-      value: PLEASE RESPOND!
+      value: Please Respond
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
