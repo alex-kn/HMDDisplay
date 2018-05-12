@@ -13,6 +13,6 @@ public class LookAtEyes : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.LookAt(eyes.transform);
-
+    
 	}
 }

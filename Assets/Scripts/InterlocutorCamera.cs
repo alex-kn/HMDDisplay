@@ -6,21 +6,29 @@ public class InterlocutorCamera : MonoBehaviour
 {
 
     Camera cam;
-    public GameObject obj;
+    public GameObject phoneDisplay;
+    private Plane plane;
 
-    public int phoneCameraWidth = 640;
-    public int phoneCameraHeight = 480;
 
     void Start()
     {
         cam = GetComponent<Camera>();
+        //Instantiate<Plane>(new Plane(new Vector3(1,1), new Vector3(-1, 1), new Vector3(1,-1));
+        plane = new Plane(new Vector3(1, 1, 0), new Vector3(-1, 1, 0), new Vector3(1, -1, 0 ));
 
     }
 
     void Update()
     {
-        Vector3 p = cam.ScreenToWorldPoint(new Vector3((640  / phoneCameraWidth) * cam.pixelWidth, (480 / phoneCameraHeight) * cam.pixelHeight, cam.nearClipPlane));
-        float step = 10 * Time.deltaTime;
-        obj.transform.position = Vector3.MoveTowards(obj.transform.position, p, step);
+        Debug.DrawRay(cam.transform.position - plane.normal * plane.GetDistanceToPoint(cam.transform.position), plane.normal * plane.GetDistanceToPoint(cam.transform.position), Color.red);
+
+        Vector4 clipPlaneWorldSpace = new Vector4(plane.normal.x, plane.normal.y, plane.normal.z, Vector3.Distance(phoneDisplay.transform.position, transform.position));
+        Vector4 clipPlaneCameraSpace = Matrix4x4.Transpose(cam.cameraToWorldMatrix) * clipPlaneWorldSpace;
+
+        cam.projectionMatrix = cam.CalculateObliqueMatrix(clipPlaneWorldSpace);
+        Debug.Log(cam.projectionMatrix);
+
+        //cam.fieldOfView = 2.0f * Mathf.Atan(frustumHeight * 0.5f / distance) * Mathf.Rad2Deg;
+
     }
 }

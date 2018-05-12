@@ -18,6 +18,8 @@ public class InterlocutorPosition : MonoBehaviour
     float speed;
     AndroidJavaObject faceTracker;
 
+
+
     // Use this for initialization
     void Start()
     {
@@ -26,7 +28,8 @@ public class InterlocutorPosition : MonoBehaviour
         origPosition = transform.localPosition;
 
         isAndroid = Application.platform == RuntimePlatform.Android;
-        speed = 100f;
+        speed = 1000f;
+
 
         Debug.Log(origPosition);
         if (isAndroid)
@@ -40,20 +43,18 @@ public class InterlocutorPosition : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isAndroid)
         {
             lastPosition = faceTracker.Call<float[]>("query");
-      
+            Vector3 p = cam.ScreenToWorldPoint(new Vector3((lastPosition[0] / phoneCameraWidth) * cam.pixelWidth, cam.pixelHeight - (lastPosition[1] / phoneCameraHeight) * cam.pixelHeight, cam.nearClipPlane));
+            float step = speed * Time.deltaTime;
+            interlocPos.transform.position = Vector3.MoveTowards(interlocPos.transform.position, p, step);
         }
         else
         {
-            lastPosition = new float[] { 640, 480 };
+            //lastPosition = new float[] { 640, 480 };
         }
-        Vector3 p = cam.ScreenToWorldPoint(new Vector3((lastPosition[0] / phoneCameraWidth) * cam.pixelWidth, cam.pixelHeight -(lastPosition[1] / phoneCameraHeight) * cam.pixelHeight, cam.nearClipPlane));
-        float step = speed * Time.deltaTime;
-        interlocPos.transform.position = Vector3.MoveTowards(interlocPos.transform.position, p, step);
     }
 }

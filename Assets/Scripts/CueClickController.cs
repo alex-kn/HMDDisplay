@@ -26,19 +26,23 @@ public class CueClickController : MonoBehaviour
         iAmAttentiveButton.onClick.AddListener(IAmAttentive);
         switchRepresentationButton.onClick.AddListener(SwitchRepresentation);
         activeRepIndex = 0;
-        foreach(GameObject representation in representations){
+        foreach (GameObject representation in representations)
+        {
             representation.SetActive(false);
         }
-        SwitchRepresentation();
-        cueBehavior = GetCueBehavior();
+
     }
 
     private void LateUpdate()
     {
-        UpdateButtonColor(assistMeButton, cueBehavior.needsAssist);
-        UpdateButtonColor(doNotInterruptMe, cueBehavior.doNotInterrupt);
-        UpdateButtonColor(respondToMeButton, cueBehavior.expectsResponse);
-        UpdateButtonColor(iAmAttentiveButton, cueBehavior.isAttentive);
+        if (cueBehavior != null)
+        {
+
+            UpdateButtonColor(assistMeButton, cueBehavior.needsAssist);
+            UpdateButtonColor(doNotInterruptMe, cueBehavior.doNotInterrupt);
+            UpdateButtonColor(respondToMeButton, cueBehavior.expectsResponse);
+            UpdateButtonColor(iAmAttentiveButton, cueBehavior.isAttentive);
+        }
     }
 
     private void UpdateButtonColor(Button button, bool value)

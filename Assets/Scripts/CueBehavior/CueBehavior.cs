@@ -13,7 +13,6 @@ public abstract class CueBehavior : MonoBehaviour {
     public bool expectsResponse = false;
     public bool isAttentive = false;
 
-
     public virtual void Start()
     {
         fixationPointMovement = fixationPoint.GetComponent<FixationPointMovement>();
