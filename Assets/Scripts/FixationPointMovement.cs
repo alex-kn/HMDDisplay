@@ -7,6 +7,7 @@ public class FixationPointMovement : MonoBehaviour {
     public GameObject interlocutorPosition;
 
     private GameObject topFixationPoint;
+    private GameObject frontFixationPoint;
 
     private Transform target;
 
@@ -15,9 +16,12 @@ public class FixationPointMovement : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        MoveTowardInterlocutorPosition();
+        FixateInterlocutorPosition();
         topFixationPoint = new GameObject();
         topFixationPoint.transform.position = new Vector3(0f, 12f, 15f);
+        frontFixationPoint = new GameObject();
+        frontFixationPoint.transform.position = new Vector3(0f, 0f, 15f);
+
     }
 
     void Update()
@@ -26,13 +30,19 @@ public class FixationPointMovement : MonoBehaviour {
         transform.position = Vector3.MoveTowards(transform.position, target.position, step);
     }
 
-    public void MoveTowardInterlocutorPosition()
+    public void FixateInterlocutorPosition()
     {
         target = interlocutorPosition.transform;
     }
 
-    public void MoveUp()
+    public void FixateUpward()
     {
         target = topFixationPoint.transform;
     }
+
+    public void FixateAhead()
+    {
+        target = frontFixationPoint.transform;
+    }
+
 }

@@ -5,46 +5,62 @@ using UnityEngine;
 public class ColorCueBehavior : CueBehavior
 {
 
-    public GameObject questionMark;
 
-
-    public override void SetNeedsAssist(bool needsAssist)
+    protected override void SetNeedsAssist(bool needsAssist)
     {
         base.SetNeedsAssist(needsAssist);
-        //questionMark.SetActive(needsAssist);
         if (needsAssist)
         {
-            GetComponent<Renderer>().material.color = Color.yellow;
-        }
-    }
-
-    public override void SetDoNotInterrupt(bool doNotInterrupt)
-    {
-        base.SetDoNotInterrupt(doNotInterrupt);
-        if (doNotInterrupt)
-        {
             GetComponent<Renderer>().material.color = Color.red;
-
+        }
+        else
+        {
+            SetNeutral();
         }
     }
 
-    public override void SetIsAttentive(bool isAttentive)
+    protected override void SetReferencingObject(bool referencingObject)
+    {
+        base.SetReferencingObject(referencingObject);
+        if (referencingObject)
+        {
+            GetComponent<Renderer>().material.color = Color.yellow;
+
+        }
+        else
+        {
+            SetNeutral();
+        }
+    }
+
+    protected override void SetIsAttentive(bool isAttentive)
     {
         base.SetIsAttentive(isAttentive);
         if (isAttentive)
         {
             GetComponent<Renderer>().material.color = Color.green;
-
+        }
+        else
+        {
+            SetNeutral();
         }
     }
 
-    public override void SetExpectsResponse(bool expectsResponse)
+    protected override void SetExpectsResponse(bool expectsResponse)
     {
         base.SetExpectsResponse(expectsResponse);
         if (expectsResponse)
         {
             GetComponent<Renderer>().material.color = Color.blue;
-
         }
+        else
+        {
+            SetNeutral();
+        }
+    }
+
+    protected override void SetNeutral()
+    {
+        GetComponent<Renderer>().material.color = Color.black;
     }
 }

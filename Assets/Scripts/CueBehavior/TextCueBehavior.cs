@@ -6,7 +6,7 @@ public class TextCueBehavior : CueBehavior
 {
 
     public GameObject assText;
-    public GameObject dndText;
+    public GameObject refText;
     public GameObject resText;
     public GameObject attText;
 
@@ -16,29 +16,37 @@ public class TextCueBehavior : CueBehavior
         GetComponent<Renderer>().material.color = Color.black;
     }
 
-    public override void SetNeedsAssist(bool needsAssist)
+    protected override void SetNeedsAssist(bool needsAssist)
     {
         base.SetNeedsAssist(needsAssist);
         assText.SetActive(needsAssist);
     }
 
-    public override void SetDoNotInterrupt(bool doNotInterrupt)
+    protected override void SetReferencingObject(bool referencingObject)
     {
-        base.SetDoNotInterrupt(doNotInterrupt);
-        dndText.SetActive(doNotInterrupt);
+        base.SetReferencingObject(referencingObject);
+        refText.SetActive(referencingObject);
     }
 
-    public override void SetIsAttentive(bool isAttentive)
+    protected override void SetIsAttentive(bool isAttentive)
     {
         base.SetIsAttentive(isAttentive);
         attText.SetActive(isAttentive);
 
     }
 
-    public override void SetExpectsResponse(bool expectsResponse)
+    protected override void SetExpectsResponse(bool expectsResponse)
     {
         base.SetExpectsResponse(expectsResponse);
         resText.SetActive(expectsResponse);
 
+    }
+
+    protected override void SetNeutral()
+    {
+        attText.SetActive(false);
+        refText.SetActive(false);
+        resText.SetActive(false);
+        assText.SetActive(false);
     }
 }

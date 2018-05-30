@@ -9,7 +9,7 @@ public abstract class CueBehavior : MonoBehaviour {
     protected FixationPointMovement fixationPointMovement;
 
     public bool needsAssist = false;
-    public bool doNotInterrupt = false;
+    public bool referencingObject = false;
     public bool expectsResponse = false;
     public bool isAttentive = false;
 
@@ -22,75 +22,42 @@ public abstract class CueBehavior : MonoBehaviour {
 
     public void Update()
     {
-        Debug.Log(needsAssist);
     }
 
-    public virtual void SetNeedsAssist(bool needsAssist)
+    protected virtual void SetNeedsAssist(bool needsAssist)
     {
         if (this.needsAssist == needsAssist) return;
         this.needsAssist = needsAssist;
-        if (needsAssist)
-        {
-            SetDoNotInterrupt(false);
-            SetExpectsResponse(true);
-            SetIsAttentive(true);
-        }
     }
 
-    public virtual void SetDoNotInterrupt(bool doNotInterrupt)
+    protected virtual void SetReferencingObject(bool referencingObject)
     {
-        if (this.doNotInterrupt == doNotInterrupt) return;
-        this.doNotInterrupt = doNotInterrupt;
-        if (doNotInterrupt)
-        {
-            SetNeedsAssist(false);
-            SetExpectsResponse(false);
-            SetIsAttentive(false);
-        }
-        else
-        {
-            SetIsAttentive(true);
-        }
+        if (this.referencingObject == referencingObject) return;
+        this.referencingObject = referencingObject;
     }
 
-    public virtual void SetExpectsResponse(bool expectsResponse)
+    protected virtual void SetExpectsResponse(bool expectsResponse)
     {
         if (this.expectsResponse == expectsResponse) return;
         this.expectsResponse = expectsResponse;
-        if (expectsResponse)
-        {
-            SetDoNotInterrupt(false);
-            SetIsAttentive(true);
-        }
-        else
-        {
-            SetNeedsAssist(false);
-        }
     }
 
-    public virtual void SetIsAttentive(bool isAttentive)
+    protected virtual void SetIsAttentive(bool isAttentive)
     {
         if (this.isAttentive == isAttentive) return;
         this.isAttentive = isAttentive;
-        if(isAttentive)
-        {
-            SetDoNotInterrupt(false);
-        }
-        else
-        {
-            SetExpectsResponse(false);
-            SetNeedsAssist(false);
-            SetDoNotInterrupt(true);
-        }
     }
+
 
     public void ResetCues()
     {
         SetNeedsAssist(false);
         SetIsAttentive(false);
-        SetDoNotInterrupt(false);
+        SetReferencingObject(false);
         SetExpectsResponse(false);
     }
+
+    protected abstract void SetNeutral();
 
     public void ToggleNeedsAssist()
     {
@@ -99,7 +66,7 @@ public abstract class CueBehavior : MonoBehaviour {
 
     public void ToggleDoNotInterrupt()
     {
-        SetDoNotInterrupt(!doNotInterrupt);
+        SetReferencingObject(!referencingObject);
     }
 
     public void ToggleExpectsResponse()

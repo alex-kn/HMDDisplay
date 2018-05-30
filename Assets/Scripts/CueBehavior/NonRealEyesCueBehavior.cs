@@ -5,47 +5,60 @@ using UnityEngine;
 public class NonRealEyesCueBehavior : CueBehavior
 {
 
-    public override void SetNeedsAssist(bool needsAssist)
+    protected override void SetNeedsAssist(bool needsAssist)
     {
+        base.SetNeedsAssist(needsAssist);
         if (needsAssist)
         {
-            fixationPointMovement.MoveTowardInterlocutorPosition();
-        }
-        base.SetNeedsAssist(needsAssist);
-    }
-
-    public override void SetDoNotInterrupt(bool doNotInterrupt)
-    {
-        if (doNotInterrupt)
-        {
-            fixationPointMovement.MoveUp();
+            fixationPointMovement.FixateInterlocutorPosition();
         }
         else
         {
-            fixationPointMovement.MoveTowardInterlocutorPosition();
+            SetNeutral();
         }
-        base.SetDoNotInterrupt(doNotInterrupt);
     }
 
-    public override void SetExpectsResponse(bool expectsResponse)
+    protected override void SetReferencingObject(bool referencingObject)
     {
+        base.SetReferencingObject(referencingObject);
+        if (referencingObject)
+        {
+            fixationPointMovement.FixateAhead();
+        }
+        else
+        {
+            SetNeutral();
+        }
+    }
+
+    protected override void SetExpectsResponse(bool expectsResponse)
+    {
+        base.SetExpectsResponse(expectsResponse);
         if (expectsResponse)
         {
-            fixationPointMovement.MoveTowardInterlocutorPosition();
-        }
-        base.SetExpectsResponse(expectsResponse);
-    }
-
-    public override void SetIsAttentive(bool isAttentive)
-    {
-        if (isAttentive)
-        {
-            fixationPointMovement.MoveTowardInterlocutorPosition();
+            fixationPointMovement.FixateInterlocutorPosition();
         }
         else
         {
-            fixationPointMovement.MoveUp();
+            SetNeutral();
         }
+    }
+
+    protected override void SetIsAttentive(bool isAttentive)
+    {
         base.SetIsAttentive(isAttentive);
+        if (isAttentive)
+        {
+            fixationPointMovement.FixateInterlocutorPosition();
+        }
+        else
+        {
+            SetNeutral();
+        }
+    }
+
+    protected override void SetNeutral()
+    {
+        fixationPointMovement.FixateAhead();
     }
 }

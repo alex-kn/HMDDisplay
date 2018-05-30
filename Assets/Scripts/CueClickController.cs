@@ -39,7 +39,7 @@ public class CueClickController : MonoBehaviour
         {
 
             UpdateButtonColor(assistMeButton, cueBehavior.needsAssist);
-            UpdateButtonColor(doNotInterruptMe, cueBehavior.doNotInterrupt);
+            UpdateButtonColor(doNotInterruptMe, cueBehavior.referencingObject);
             UpdateButtonColor(respondToMeButton, cueBehavior.expectsResponse);
             UpdateButtonColor(iAmAttentiveButton, cueBehavior.isAttentive);
         }
