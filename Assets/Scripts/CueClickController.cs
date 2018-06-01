@@ -69,7 +69,6 @@ public class CueClickController : MonoBehaviour
         activeRepIndex = (activeRepIndex + 1) % representations.Length;
         representations[activeRepIndex].SetActive(true);
         cueBehavior = GetCueBehavior();
-        cueBehavior.ResetCues();
     }
 
     void AssistMe()
