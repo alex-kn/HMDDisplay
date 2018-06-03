@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ public class CueClickController : MonoBehaviour
     public Button respondToMeButton;
     public Button iAmAttentiveButton;
 
+    public RepresentationController repControl;
     public Button switchRepresentationButton;
 
     private CueBehavior cueBehavior;
@@ -21,10 +23,10 @@ public class CueClickController : MonoBehaviour
     void Start()
     {
         assistMeButton.onClick.AddListener(AssistMe);
-        doNotInterruptMe.onClick.AddListener(DoNotInterrupt);
+        doNotInterruptMe.onClick.AddListener(ReferencinObject);
         respondToMeButton.onClick.AddListener(RespondToMe);
         iAmAttentiveButton.onClick.AddListener(IAmAttentive);
-        switchRepresentationButton.onClick.AddListener(SwitchRepresentation);
+        //switchRepresentationButton.onClick.AddListener(SwitchRepresentation);
         activeRepIndex = 0;
         foreach (GameObject representation in representations)
         {
@@ -42,6 +44,29 @@ public class CueClickController : MonoBehaviour
             UpdateButtonColor(doNotInterruptMe, cueBehavior.referencingObject);
             UpdateButtonColor(respondToMeButton, cueBehavior.expectsResponse);
             UpdateButtonColor(iAmAttentiveButton, cueBehavior.isAttentive);
+        }
+    }
+
+    internal void ActivateCue(string cueCode)
+    {
+        Debug.Log("Activating Cue " + cueCode);
+        switch (cueCode)
+        {
+            case "1":
+                AssistMe();
+                break;
+            case "2":
+                IAmAttentive();
+                break;
+            case "3":
+                ReferencinObject();
+                break;
+            case "4":
+                RespondToMe();
+                break;
+            default:
+                Debug.LogError("Cue code not found");
+                break;
         }
     }
 
@@ -77,10 +102,10 @@ public class CueClickController : MonoBehaviour
         cueBehavior.ToggleNeedsAssist();
     }
 
-    void DoNotInterrupt()
+    void ReferencinObject()
     {
         cueBehavior = GetCueBehavior();
-        cueBehavior.ToggleDoNotInterrupt();
+        cueBehavior.ToggleReferencingObject();
     }
 
     void RespondToMe()
@@ -109,5 +134,14 @@ public class CueClickController : MonoBehaviour
         {
             throw new System.Exception("No Augmentation found.");
         }
+    }
+
+    enum CueCode
+    {
+        Assist = 1,
+        Attentive = 2,
+        Referencing = 3,
+        Response = 4
+
     }
 }

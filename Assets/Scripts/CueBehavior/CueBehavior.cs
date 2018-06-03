@@ -64,7 +64,7 @@ public abstract class CueBehavior : MonoBehaviour {
         SetNeedsAssist(!needsAssist);
     }
 
-    public void ToggleDoNotInterrupt()
+    public void ToggleReferencingObject()
     {
         SetReferencingObject(!referencingObject);
     }

@@ -6,24 +6,27 @@ public class BluetoothControl : MonoBehaviour {
 
     AndroidJavaObject bluetoothController;
 
-    private CueClickController cueClickController;
+    public RepresentationController representationController;
+    public CueClickController cueClickController;
+
+    public delegate void ActivateCueDelegate(string code);
 
 	// Use this for initialization
 	void Start () {
         bool isAndroid = Application.platform == RuntimePlatform.Android;
         cueClickController = GetComponent<CueClickController>();
+
+        ActivateCueDelegate activateCueHandler = cueClickController.ActivateCue;
+
         if (isAndroid)
         {
             Debug.Log("Android found.");
 
             AndroidJavaClass unitPlayerClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             AndroidJavaObject activity = unitPlayerClass.GetStatic<AndroidJavaObject>("currentActivity");
-            Debug.Log("YAZ");
             bluetoothController = new AndroidJavaObject("ak.hmddisplay.bluetoothconnect.BluetoothController", activity);
-           
-                Debug.Log("YAY");
             
-            bluetoothController.Call("addBluetoothListener", new CueCallback());
+            bluetoothController.Call("addBluetoothListener", new CueCallback(activateCueHandler));
 
             StartBluetooth();
         }
@@ -34,6 +37,7 @@ public class BluetoothControl : MonoBehaviour {
 		
 	}
 
+
     private void StartBluetooth()
     {
         bluetoothController.Call("connectAsServer");
@@ -41,11 +45,17 @@ public class BluetoothControl : MonoBehaviour {
 
     class CueCallback : AndroidJavaProxy
     {
-        public CueCallback() : base("ak.hmddisplay.bluetoothconnect.OnMessageReceivedListener") { }
-        public void onMessageReceived(int code)
+
+        private ActivateCueDelegate callback;
+        public CueCallback(ActivateCueDelegate callback) : base("ak.hmddisplay.bluetoothconnect.OnMessageReceivedListener")
+        {
+            this.callback = callback;
+        }
+        public void onMessageReceived(string code)
         {
             Debug.Log("Message Received");
             Debug.Log(code);
+            callback(code);
         }
     }
 }
