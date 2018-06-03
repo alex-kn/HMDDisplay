@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,13 +11,18 @@ public class BluetoothControl : MonoBehaviour {
     public CueClickController cueClickController;
 
     public delegate void ActivateCueDelegate(string code);
+    public delegate void SwitchRepresentationDelegate();
 
-	// Use this for initialization
-	void Start () {
+    protected static readonly Queue<Action> taskQueue = new Queue<Action>();
+    protected static object _queueLock = new object();
+
+
+    // Use this for initialization
+    void Start () {
         bool isAndroid = Application.platform == RuntimePlatform.Android;
-        cueClickController = GetComponent<CueClickController>();
 
         ActivateCueDelegate activateCueHandler = cueClickController.ActivateCue;
+        SwitchRepresentationDelegate switchRepresentationHandler = representationController.SwitchRepresentation;
 
         if (isAndroid)
         {
@@ -26,7 +32,7 @@ public class BluetoothControl : MonoBehaviour {
             AndroidJavaObject activity = unitPlayerClass.GetStatic<AndroidJavaObject>("currentActivity");
             bluetoothController = new AndroidJavaObject("ak.hmddisplay.bluetoothconnect.BluetoothController", activity);
             
-            bluetoothController.Call("addBluetoothListener", new CueCallback(activateCueHandler));
+            bluetoothController.Call("addBluetoothListener", new CueCallback(activateCueHandler, switchRepresentationHandler));
 
             StartBluetooth();
         }
@@ -34,7 +40,14 @@ public class BluetoothControl : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
+        lock (_queueLock)
+        {
+            if (taskQueue.Count > 0)
+            {
+                taskQueue.Dequeue()();
+
+            }
+        }
 	}
 
 
@@ -46,16 +59,29 @@ public class BluetoothControl : MonoBehaviour {
     class CueCallback : AndroidJavaProxy
     {
 
-        private ActivateCueDelegate callback;
-        public CueCallback(ActivateCueDelegate callback) : base("ak.hmddisplay.bluetoothconnect.OnMessageReceivedListener")
+        private ActivateCueDelegate cueCallback;
+        private SwitchRepresentationDelegate repCallback;
+
+        public CueCallback(ActivateCueDelegate cueCallback, SwitchRepresentationDelegate repCallback) : base("ak.hmddisplay.bluetoothconnect.OnMessageReceivedListener")
         {
-            this.callback = callback;
+            this.cueCallback = cueCallback;
+            this.repCallback = repCallback;
         }
         public void onMessageReceived(string code)
         {
-            Debug.Log("Message Received");
-            Debug.Log(code);
-            callback(code);
+            Debug.Log("Message Received: " + code);
+            lock (_queueLock)
+            {
+
+                if (code.Equals("0"))
+                {
+                    taskQueue.Enqueue(() => repCallback());
+                }
+                else
+                {
+                    taskQueue.Enqueue(() => cueCallback(code));
+                }
+            }
         }
     }
 }

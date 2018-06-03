@@ -16,7 +16,7 @@ public abstract class CueBehavior : MonoBehaviour {
     public virtual void Start()
     {
         fixationPointMovement = fixationPoint.GetComponent<FixationPointMovement>();
-        ResetCues();
+        //ResetCues();
     }
 
 

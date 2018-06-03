@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class ColorCueBehavior : CueBehavior
 {
+    private Renderer rend;
 
+    public override void Start()
+    {
+        base.Start();
+        rend = GetComponent<Renderer>();
+    }
 
     protected override void SetNeedsAssist(bool needsAssist)
     {
         base.SetNeedsAssist(needsAssist);
         if (needsAssist)
         {
-            GetComponent<Renderer>().material.color = Color.red;
+            rend.material.color = Color.red;
         }
         else
         {
@@ -24,7 +30,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetReferencingObject(referencingObject);
         if (referencingObject)
         {
-            GetComponent<Renderer>().material.color = Color.yellow;
+            rend.material.color = Color.yellow;
 
         }
         else
@@ -38,7 +44,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetIsAttentive(isAttentive);
         if (isAttentive)
         {
-            GetComponent<Renderer>().material.color = Color.green;
+            rend.material.color = Color.green;
         }
         else
         {
@@ -51,7 +57,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetExpectsResponse(expectsResponse);
         if (expectsResponse)
         {
-            GetComponent<Renderer>().material.color = Color.blue;
+            rend.material.color = Color.blue;
         }
         else
         {
@@ -61,6 +67,6 @@ public class ColorCueBehavior : CueBehavior
 
     protected override void SetNeutral()
     {
-        GetComponent<Renderer>().material.color = Color.black;
+        rend.material.color = Color.black;
     }
 }

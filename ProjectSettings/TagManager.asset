@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Augmentation
   - InterlocutorPosition
+  - CueControl
+  - RepControl
   layers:
   - Default
   - TransparentFX

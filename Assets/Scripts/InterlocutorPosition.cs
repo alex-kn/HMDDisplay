@@ -45,6 +45,7 @@ public class InterlocutorPosition : MonoBehaviour
 
     void Update()
     {
+        //if (false)
         if (isAndroid)
         {
             lastPosition = faceTracker.Call<float[]>("query");
