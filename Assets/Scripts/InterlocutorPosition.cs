@@ -14,11 +14,9 @@ public class InterlocutorPosition : MonoBehaviour
 
     public GameObject interlocPos;
 
-    float[] lastPosition;
+    float[] lastPosition = new float[2];
     float speed;
     AndroidJavaObject faceTracker;
-
-
 
     // Use this for initialization
     void Start()
@@ -45,10 +43,14 @@ public class InterlocutorPosition : MonoBehaviour
 
     void Update()
     {
-        //if (false)
         if (isAndroid)
         {
-            lastPosition = faceTracker.Call<float[]>("query");
+            var tmp = faceTracker.Call<float[]>("query");
+            if (tmp[0] == lastPosition[0] && tmp[1] == lastPosition[1])
+            {
+                return;
+            }
+            lastPosition = tmp;
             Vector3 p = cam.ScreenToWorldPoint(new Vector3((lastPosition[0] / phoneCameraWidth) * cam.pixelWidth, cam.pixelHeight - (lastPosition[1] / phoneCameraHeight) * cam.pixelHeight, cam.nearClipPlane));
             float step = speed * Time.deltaTime;
             interlocPos.transform.position = Vector3.MoveTowards(interlocPos.transform.position, p, step);

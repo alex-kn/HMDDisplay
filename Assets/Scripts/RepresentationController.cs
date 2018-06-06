@@ -31,10 +31,4 @@ public class RepresentationController : MonoBehaviour {
         cueClickController.SetCueBehavior(representations[activeRepIndex].GetComponent<CueBehavior>());
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
-
-
 }

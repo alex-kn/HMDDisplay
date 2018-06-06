@@ -17,7 +17,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetNeedsAssist(needsAssist);
         if (needsAssist)
         {
-            rend.material.color = Color.red;
+            rend.material.color = Color.yellow;
         }
         else
         {
@@ -30,7 +30,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetReferencingObject(referencingObject);
         if (referencingObject)
         {
-            rend.material.color = Color.yellow;
+            rend.material.color = Color.blue;
 
         }
         else
@@ -44,7 +44,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetIsAttentive(isAttentive);
         if (isAttentive)
         {
-            rend.material.color = Color.green;
+            rend.material.color = Color.red;
         }
         else
         {
@@ -57,7 +57,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetExpectsResponse(expectsResponse);
         if (expectsResponse)
         {
-            rend.material.color = Color.blue;
+            rend.material.color = Color.green;
         }
         else
         {

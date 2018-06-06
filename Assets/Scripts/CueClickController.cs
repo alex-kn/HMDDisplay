@@ -24,7 +24,7 @@ public class CueClickController : MonoBehaviour
         
 
     }
-
+/**
     private void LateUpdate()
     {
         if (cueBehavior != null)
@@ -36,7 +36,7 @@ public class CueClickController : MonoBehaviour
             UpdateButtonColor(iAmAttentiveButton, cueBehavior.isAttentive);
         }
     }
-
+*/
     internal void ActivateCue(string cueCode)
     {
         Debug.Log("Activating Cue " + cueCode);

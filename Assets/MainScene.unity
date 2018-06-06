@@ -1527,7 +1527,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1556,7 +1556,7 @@ Prefab:
     - target: {fileID: 102703137017491916, guid: 0c5986fdb5ae4474c823925c0b1854da,
         type: 2}
       propertyPath: m_Text
-      value: Attentive
+      value: not attentive
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
@@ -1663,7 +1663,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1692,7 +1692,7 @@ Prefab:
     - target: {fileID: 102703137017491916, guid: 0c5986fdb5ae4474c823925c0b1854da,
         type: 2}
       propertyPath: m_Text
-      value: Help
+      value: assist
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
@@ -2012,7 +2012,7 @@ Camera:
     height: 1
   near clip plane: 12
   far clip plane: 1000
-  field of view: 14
+  field of view: 26
   orthographic: 0
   orthographic size: 5
   m_Depth: 5
@@ -2198,7 +2198,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
       propertyPath: m_LocalRotation.x
@@ -2227,7 +2227,7 @@ Prefab:
     - target: {fileID: 102703137017491916, guid: 0c5986fdb5ae4474c823925c0b1854da,
         type: 2}
       propertyPath: m_Text
-      value: This one!
+      value: reference
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
@@ -3384,7 +3384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c26b2f24c37a84793956b62025d96a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  phoneDisplay: {fileID: 1988632756}
 --- !u!1 &1956205200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,7 +3785,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
       propertyPath: m_LocalRotation.x
@@ -3815,7 +3814,7 @@ Prefab:
     - target: {fileID: 102703137017491916, guid: 0c5986fdb5ae4474c823925c0b1854da,
         type: 2}
       propertyPath: m_Text
-      value: Please Respond
+      value: respond
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}

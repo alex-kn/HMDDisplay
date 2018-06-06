@@ -19,11 +19,6 @@ public abstract class CueBehavior : MonoBehaviour {
         //ResetCues();
     }
 
-
-    public void Update()
-    {
-    }
-
     protected virtual void SetNeedsAssist(bool needsAssist)
     {
         if (this.needsAssist == needsAssist) return;

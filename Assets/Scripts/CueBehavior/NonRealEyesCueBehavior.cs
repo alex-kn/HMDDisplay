@@ -49,7 +49,7 @@ public class NonRealEyesCueBehavior : CueBehavior
         base.SetIsAttentive(isAttentive);
         if (isAttentive)
         {
-            fixationPointMovement.FixateInterlocutorPosition();
+            fixationPointMovement.FixateUpward();
         }
         else
         {

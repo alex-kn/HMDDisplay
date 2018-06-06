@@ -20,10 +20,6 @@ public class Calibration : MonoBehaviour {
         down.onClick.AddListener(Down);
     }
 
-    // Update is called once per frame
-    void Update() {
-
-    }
 
     void Left()
     {

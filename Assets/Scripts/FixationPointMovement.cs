@@ -11,7 +11,7 @@ public class FixationPointMovement : MonoBehaviour {
 
     private Transform target;
 
-    private float speed = 100;
+    private float speed = 1000;
 
     // Use this for initialization
     void Start()
