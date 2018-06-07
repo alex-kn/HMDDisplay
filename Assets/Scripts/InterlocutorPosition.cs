@@ -8,7 +8,11 @@ public class InterlocutorPosition : MonoBehaviour
     bool isAndroid = false;
     Vector3 origPosition;
 
-    Camera cam;
+    //this is a dummy cam used to convert the 2D point from face tracking to a 3D point in the scene
+    Camera phoneCam;
+
+    Camera mainCam;
+
     public int phoneCameraWidth = 640;
     public int phoneCameraHeight = 480;
 
@@ -21,7 +25,8 @@ public class InterlocutorPosition : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        cam = GetComponent<Camera>();
+        phoneCam = GetComponent<Camera>();
+        mainCam = Camera.main;
         Debug.Log("Starting InterlocutorPosition, checking for Android device");
         origPosition = transform.localPosition;
 
@@ -51,9 +56,12 @@ public class InterlocutorPosition : MonoBehaviour
                 return;
             }
             lastPosition = tmp;
-            Vector3 p = cam.ScreenToWorldPoint(new Vector3((lastPosition[0] / phoneCameraWidth) * cam.pixelWidth, cam.pixelHeight - (lastPosition[1] / phoneCameraHeight) * cam.pixelHeight, cam.nearClipPlane));
+            Vector3 p = phoneCam.ScreenToWorldPoint(new Vector3((lastPosition[0] / phoneCameraWidth) * phoneCam.pixelWidth, phoneCam.pixelHeight - (lastPosition[1] / phoneCameraHeight) * phoneCam.pixelHeight, phoneCam.nearClipPlane));
             float step = speed * Time.deltaTime;
+
             interlocPos.transform.position = Vector3.MoveTowards(interlocPos.transform.position, p, step);
+
+           
         }
         else
         {

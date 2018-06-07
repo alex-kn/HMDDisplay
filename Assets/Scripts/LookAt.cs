@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookAtEyes : MonoBehaviour {
+public class LookAt : MonoBehaviour {
 
-    public GameObject eyes;
+    public GameObject target;
 	
 	// Update is called once per frame
 	void Update () {
-        transform.LookAt(eyes.transform);
+        transform.LookAt(target.transform);
 	}
 }
