@@ -447,7 +447,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &107457422
 Transform:
   m_ObjectHideFlags: 0
@@ -863,6 +863,10 @@ Transform:
   m_PrefabParentObject: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da,
     type: 2}
   m_PrefabInternal: {fileID: 2047519075}
+--- !u!1 &355023649 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100050, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
 --- !u!1 &464473031
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,6 +1578,2634 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &739142046 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400018, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
+--- !u!137 &739976886 stripped
+SkinnedMeshRenderer:
+  m_PrefabParentObject: {fileID: 13700000, guid: b3c4d06429b76d04bb03ba6c0e5a050e,
+    type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
+--- !u!1 &742268424 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
+--- !u!114 &742268425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b575685a60ed94580fb1378193d209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salsa3D: {fileID: 0}
+  randomEyes3D: {fileID: 742268427}
+  skinnedMeshRenderer: {fileID: 739976886}
+  leftEyeName: lEye
+  leftEyeBone: {fileID: 355023649}
+  rightEyeName: rEye
+  rightEyeBone: {fileID: 1125159900}
+  leftBlinkShapes: EyesClosedL,BlinkLeft,Blink_l
+  rightBlinkShapes: EyesClosedR,BlinkRight,Blink_r
+  leftBlinkIndex: 75
+  rightBlinkIndex: 74
+  leftBlinkShape: Genesis3Male__eCTRLEyesClosedL
+  rightBlinkShape: Genesis3Male__eCTRLEyesClosedR
+  saySmall:
+  - shapeIndex: 5
+    shapeName: Genesis3Male__eCTRLvW
+    percentage: 30
+  - shapeIndex: 6
+    shapeName: Genesis3Male__eCTRLvUW
+    percentage: 30
+  - shapeIndex: 14
+    shapeName: Genesis3Male__eCTRLvK
+    percentage: 20
+  sayMedium:
+  - shapeIndex: 15
+    shapeName: Genesis3Male__eCTRLvIY
+    percentage: 60
+  - shapeIndex: 21
+    shapeName: Genesis3Male__eCTRLvAA
+    percentage: 50
+  - shapeIndex: 35
+    shapeName: Genesis3Male__eCTRLMouthSmileOpen
+    percentage: 20
+  - shapeIndex: 36
+    shapeName: Genesis3Male__eCTRLMouthSmile
+    percentage: 40
+  - shapeIndex: 50
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownR
+    percentage: 20
+  - shapeIndex: 51
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownL
+    percentage: 20
+  - shapeIndex: 60
+    shapeName: Genesis3Male__eCTRLLipBottomUp-DownR
+    percentage: 20
+  - shapeIndex: 61
+    shapeName: Genesis3Male__eCTRLLipBottomUp-DownL
+    percentage: 20
+  sayLarge:
+  - shapeIndex: 7
+    shapeName: Genesis3Male__eCTRLvTH
+    percentage: 100
+  - shapeIndex: 11
+    shapeName: Genesis3Male__eCTRLvOW
+    percentage: 60
+  - shapeIndex: 20
+    shapeName: Genesis3Male__eCTRLvEE
+    percentage: 50
+  - shapeIndex: 50
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownR
+    percentage: 35
+  shapeNames:
+  - Genesis3Male__eCTRLSurprised
+  - Genesis3Male__eCTRLSmile
+  - Genesis3Male__eCTRLFrown
+  - Genesis3Male__eCTRLFlirting
+  - Genesis3Male__eCTRLAngry
+  - Genesis3Male__eCTRLvW
+  - Genesis3Male__eCTRLvUW
+  - Genesis3Male__eCTRLvTH
+  - Genesis3Male__eCTRLvT
+  - Genesis3Male__eCTRLvSH
+  - Genesis3Male__eCTRLvS
+  - Genesis3Male__eCTRLvOW
+  - Genesis3Male__eCTRLvM
+  - Genesis3Male__eCTRLvL
+  - Genesis3Male__eCTRLvK
+  - Genesis3Male__eCTRLvIY
+  - Genesis3Male__eCTRLvIH
+  - Genesis3Male__eCTRLvF
+  - Genesis3Male__eCTRLvER
+  - Genesis3Male__eCTRLvEH
+  - Genesis3Male__eCTRLvEE
+  - Genesis3Male__eCTRLvAA
+  - Genesis3Male__eCTRLTongueUp-Down
+  - Genesis3Male__eCTRLTongueSide-Side
+  - Genesis3Male__eCTRLTongueRaise-Lower
+  - Genesis3Male__eCTRLTongueNarrow-Wide
+  - Genesis3Male__eCTRLTongueIn-Out
+  - Genesis3Male__eCTRLTongueBendTip
+  - Genesis3Male__eCTRLTongue Curl
+  - Genesis3Male__eCTRLNostrilsFlare
+  - Genesis3Male__eCTRLNoseWrinkle
+  - Genesis3Male__eCTRLNoseScrunch
+  - Genesis3Male__eCTRLMouthSmileSimpleR
+  - Genesis3Male__eCTRLMouthSmileSimpleL
+  - Genesis3Male__eCTRLMouthSmileSimple
+  - Genesis3Male__eCTRLMouthSmileOpen
+  - Genesis3Male__eCTRLMouthSmile
+  - Genesis3Male__eCTRLMouthSide-SideR
+  - Genesis3Male__eCTRLMouthSide-SideL
+  - Genesis3Male__eCTRLMouthSide-Side
+  - Genesis3Male__eCTRLMouthOpenWide
+  - Genesis3Male__eCTRLMouthOpen
+  - Genesis3Male__eCTRLMouthNarrowR
+  - Genesis3Male__eCTRLMouthNarrowL
+  - Genesis3Male__eCTRLMouthNarrow
+  - Genesis3Male__eCTRLMouthFrown
+  - Genesis3Male__eCTRLMouthCornerUp-Down
+  - Genesis3Male__eCTRLMouthCornerBackR
+  - Genesis3Male__eCTRLMouthCornerBackL
+  - Genesis3Male__eCTRLMouthCornerBack
+  - Genesis3Male__eCTRLLipTopUp-DownR
+  - Genesis3Male__eCTRLLipTopUp-DownL
+  - Genesis3Male__eCTRLLipTopUp-Down
+  - Genesis3Male__eCTRLLipTopIn-OutR
+  - Genesis3Male__eCTRLLipTopIn-OutL
+  - Genesis3Male__eCTRLLipTopIn-Out
+  - Genesis3Male__eCTRLLipsPuckerWide
+  - Genesis3Male__eCTRLLipsPucker
+  - Genesis3Male__eCTRLLipsPartCenter
+  - Genesis3Male__eCTRLLipsPart
+  - Genesis3Male__eCTRLLipBottomUp-DownR
+  - Genesis3Male__eCTRLLipBottomUp-DownL
+  - Genesis3Male__eCTRLLipBottomUp-Down
+  - Genesis3Male__eCTRLLipBottomIn-OutR
+  - Genesis3Male__eCTRLLipBottomIn-OutL
+  - Genesis3Male__eCTRLLipBottomIn-Out
+  - Genesis3Male__eCTRLJawSide-Side
+  - Genesis3Male__eCTRLJawOut-In
+  - Genesis3Male__eCTRLEyesUpDown
+  - Genesis3Male__eCTRLEyesSquintR
+  - Genesis3Male__eCTRLEyesSquintL
+  - Genesis3Male__eCTRLEyesSquint
+  - Genesis3Male__eCTRLEyesSideSide
+  - Genesis3Male__eCTRLEyesCrossed
+  - Genesis3Male__eCTRLEyesClosedR
+  - Genesis3Male__eCTRLEyesClosedL
+  - Genesis3Male__eCTRLEyesClosed
+  - Genesis3Male__eCTRLEyelidsUpperDownUpR
+  - Genesis3Male__eCTRLEyelidsUpperDownUpL
+  - Genesis3Male__eCTRLEyelidsUpperDownUp
+  - Genesis3Male__eCTRLEyelidsLowerUpDownR
+  - Genesis3Male__eCTRLEyelidsLowerUpDownL
+  - Genesis3Male__eCTRLEyelidsLowerUpDown
+  - Genesis3Male__eCTRLCheeksBalloonPucker
+  - Genesis3Male__eCTRLCheeksBalloon
+  - Genesis3Male__eCTRLCheekFlexR
+  - Genesis3Male__eCTRLCheekFlexL
+  - Genesis3Male__eCTRLCheekFlex
+  - Genesis3Male__eCTRLCheekEyeFlexR
+  - Genesis3Male__eCTRLCheekEyeFlexL
+  - Genesis3Male__eCTRLCheekEyeFlex
+  - Genesis3Male__eCTRLCheekCrease
+  - Genesis3Male__eCTRLBrowUp-DownR
+  - Genesis3Male__eCTRLBrowUp-DownL
+  - Genesis3Male__eCTRLBrowUp-Down
+  - Genesis3Male__eCTRLBrowSqueeze
+  - Genesis3Male__eCTRLBrowOuterUp-DownR
+  - Genesis3Male__eCTRLBrowOuterUp-DownL
+  - Genesis3Male__eCTRLBrowOuterUp-Down
+  - Genesis3Male__eCTRLBrowInnerUp-DownR
+  - Genesis3Male__eCTRLBrowInnerUp-DownL
+  - Genesis3Male__eCTRLBrowInnerUp-Down
+  - head__eCTRLSurprised
+  - head__eCTRLSmile
+  - head__eCTRLFrown
+  - head__eCTRLFlirting
+  - head__eCTRLAngry
+  - head__eCTRLvW
+  - head__eCTRLvUW
+  - head__eCTRLvTH
+  - head__eCTRLvT
+  - head__eCTRLvSH
+  - head__eCTRLvS
+  - head__eCTRLvOW
+  - head__eCTRLvM
+  - head__eCTRLvL
+  - head__eCTRLvK
+  - head__eCTRLvIY
+  - head__eCTRLvIH
+  - head__eCTRLvF
+  - head__eCTRLvER
+  - head__eCTRLvEH
+  - head__eCTRLvEE
+  - head__eCTRLvAA
+  - head__eCTRLTongueUp-Down
+  - head__eCTRLTongueSide-Side
+  - head__eCTRLTongueRaise-Lower
+  - head__eCTRLTongueNarrow-Wide
+  - head__eCTRLTongueIn-Out
+  - head__eCTRLTongueBendTip
+  - head__eCTRLTongue Curl
+  - head__eCTRLNostrilsFlare
+  - head__eCTRLNoseWrinkle
+  - head__eCTRLNoseScrunch
+  - head__eCTRLMouthSmileSimpleR
+  - head__eCTRLMouthSmileSimpleL
+  - head__eCTRLMouthSmileSimple
+  - head__eCTRLMouthSmileOpen
+  - head__eCTRLMouthSmile
+  - head__eCTRLMouthSide-SideR
+  - head__eCTRLMouthSide-SideL
+  - head__eCTRLMouthSide-Side
+  - head__eCTRLMouthOpenWide
+  - head__eCTRLMouthOpen
+  - head__eCTRLMouthNarrowR
+  - head__eCTRLMouthNarrowL
+  - head__eCTRLMouthNarrow
+  - head__eCTRLMouthFrown
+  - head__eCTRLMouthCornerUp-Down
+  - head__eCTRLMouthCornerBackR
+  - head__eCTRLMouthCornerBackL
+  - head__eCTRLMouthCornerBack
+  - head__eCTRLLipTopUp-DownR
+  - head__eCTRLLipTopUp-DownL
+  - head__eCTRLLipTopUp-Down
+  - head__eCTRLLipTopIn-OutR
+  - head__eCTRLLipTopIn-OutL
+  - head__eCTRLLipTopIn-Out
+  - head__eCTRLLipsPuckerWide
+  - head__eCTRLLipsPucker
+  - head__eCTRLLipsPartCenter
+  - head__eCTRLLipsPart
+  - head__eCTRLLipBottomUp-DownR
+  - head__eCTRLLipBottomUp-DownL
+  - head__eCTRLLipBottomUp-Down
+  - head__eCTRLLipBottomIn-OutR
+  - head__eCTRLLipBottomIn-OutL
+  - head__eCTRLLipBottomIn-Out
+  - head__eCTRLJawSide-Side
+  - head__eCTRLJawOut-In
+  - head__eCTRLEyesUpDown
+  - head__eCTRLEyesSquintR
+  - head__eCTRLEyesSquintL
+  - head__eCTRLEyesSquint
+  - head__eCTRLEyesSideSide
+  - head__eCTRLEyesCrossed
+  - head__eCTRLEyesClosedR
+  - head__eCTRLEyesClosedL
+  - head__eCTRLEyesClosed
+  - head__eCTRLEyelidsUpperDownUpR
+  - head__eCTRLEyelidsUpperDownUpL
+  - head__eCTRLEyelidsUpperDownUp
+  - head__eCTRLEyelidsLowerUpDownR
+  - head__eCTRLEyelidsLowerUpDownL
+  - head__eCTRLEyelidsLowerUpDown
+  - head__eCTRLCheeksBalloonPucker
+  - head__eCTRLCheeksBalloon
+  - head__eCTRLCheekFlexR
+  - head__eCTRLCheekFlexL
+  - head__eCTRLCheekFlex
+  - head__eCTRLCheekEyeFlexR
+  - head__eCTRLCheekEyeFlexL
+  - head__eCTRLCheekEyeFlex
+  - head__eCTRLCheekCrease
+  - head__eCTRLBrowUp-DownR
+  - head__eCTRLBrowUp-DownL
+  - head__eCTRLBrowUp-Down
+  - head__eCTRLBrowSqueeze
+  - head__eCTRLBrowOuterUp-DownR
+  - head__eCTRLBrowOuterUp-DownL
+  - head__eCTRLBrowOuterUp-Down
+  - head__eCTRLBrowInnerUp-DownR
+  - head__eCTRLBrowInnerUp-DownL
+  - head__eCTRLBrowInnerUp-Down
+  initialize: 0
+  dazType: 3
+  prevType: 3
+--- !u!114 &742268426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1624661579, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salsa3D: {fileID: 742268429}
+  skinnedMeshRenderer: {fileID: 739976886}
+  prevSkinnedMeshRenderer: {fileID: 739976886}
+  getSkndMshRndr: 0
+  blendShapes:
+  - Genesis3Male__eCTRLSurprised
+  - Genesis3Male__eCTRLSmile
+  - Genesis3Male__eCTRLFrown
+  - Genesis3Male__eCTRLFlirting
+  - Genesis3Male__eCTRLAngry
+  - Genesis3Male__eCTRLvW
+  - Genesis3Male__eCTRLvUW
+  - Genesis3Male__eCTRLvTH
+  - Genesis3Male__eCTRLvT
+  - Genesis3Male__eCTRLvSH
+  - Genesis3Male__eCTRLvS
+  - Genesis3Male__eCTRLvOW
+  - Genesis3Male__eCTRLvM
+  - Genesis3Male__eCTRLvL
+  - Genesis3Male__eCTRLvK
+  - Genesis3Male__eCTRLvIY
+  - Genesis3Male__eCTRLvIH
+  - Genesis3Male__eCTRLvF
+  - Genesis3Male__eCTRLvER
+  - Genesis3Male__eCTRLvEH
+  - Genesis3Male__eCTRLvEE
+  - Genesis3Male__eCTRLvAA
+  - Genesis3Male__eCTRLTongueUp-Down
+  - Genesis3Male__eCTRLTongueSide-Side
+  - Genesis3Male__eCTRLTongueRaise-Lower
+  - Genesis3Male__eCTRLTongueNarrow-Wide
+  - Genesis3Male__eCTRLTongueIn-Out
+  - Genesis3Male__eCTRLTongueBendTip
+  - Genesis3Male__eCTRLTongue Curl
+  - Genesis3Male__eCTRLNostrilsFlare
+  - Genesis3Male__eCTRLNoseWrinkle
+  - Genesis3Male__eCTRLNoseScrunch
+  - Genesis3Male__eCTRLMouthSmileSimpleR
+  - Genesis3Male__eCTRLMouthSmileSimpleL
+  - Genesis3Male__eCTRLMouthSmileSimple
+  - Genesis3Male__eCTRLMouthSmileOpen
+  - Genesis3Male__eCTRLMouthSmile
+  - Genesis3Male__eCTRLMouthSide-SideR
+  - Genesis3Male__eCTRLMouthSide-SideL
+  - Genesis3Male__eCTRLMouthSide-Side
+  - Genesis3Male__eCTRLMouthOpenWide
+  - Genesis3Male__eCTRLMouthOpen
+  - Genesis3Male__eCTRLMouthNarrowR
+  - Genesis3Male__eCTRLMouthNarrowL
+  - Genesis3Male__eCTRLMouthNarrow
+  - Genesis3Male__eCTRLMouthFrown
+  - Genesis3Male__eCTRLMouthCornerUp-Down
+  - Genesis3Male__eCTRLMouthCornerBackR
+  - Genesis3Male__eCTRLMouthCornerBackL
+  - Genesis3Male__eCTRLMouthCornerBack
+  - Genesis3Male__eCTRLLipTopUp-DownR
+  - Genesis3Male__eCTRLLipTopUp-DownL
+  - Genesis3Male__eCTRLLipTopUp-Down
+  - Genesis3Male__eCTRLLipTopIn-OutR
+  - Genesis3Male__eCTRLLipTopIn-OutL
+  - Genesis3Male__eCTRLLipTopIn-Out
+  - Genesis3Male__eCTRLLipsPuckerWide
+  - Genesis3Male__eCTRLLipsPucker
+  - Genesis3Male__eCTRLLipsPartCenter
+  - Genesis3Male__eCTRLLipsPart
+  - Genesis3Male__eCTRLLipBottomUp-DownR
+  - Genesis3Male__eCTRLLipBottomUp-DownL
+  - Genesis3Male__eCTRLLipBottomUp-Down
+  - Genesis3Male__eCTRLLipBottomIn-OutR
+  - Genesis3Male__eCTRLLipBottomIn-OutL
+  - Genesis3Male__eCTRLLipBottomIn-Out
+  - Genesis3Male__eCTRLJawSide-Side
+  - Genesis3Male__eCTRLJawOut-In
+  - Genesis3Male__eCTRLEyesUpDown
+  - Genesis3Male__eCTRLEyesSquintR
+  - Genesis3Male__eCTRLEyesSquintL
+  - Genesis3Male__eCTRLEyesSquint
+  - Genesis3Male__eCTRLEyesSideSide
+  - Genesis3Male__eCTRLEyesCrossed
+  - Genesis3Male__eCTRLEyesClosedR
+  - Genesis3Male__eCTRLEyesClosedL
+  - Genesis3Male__eCTRLEyesClosed
+  - Genesis3Male__eCTRLEyelidsUpperDownUpR
+  - Genesis3Male__eCTRLEyelidsUpperDownUpL
+  - Genesis3Male__eCTRLEyelidsUpperDownUp
+  - Genesis3Male__eCTRLEyelidsLowerUpDownR
+  - Genesis3Male__eCTRLEyelidsLowerUpDownL
+  - Genesis3Male__eCTRLEyelidsLowerUpDown
+  - Genesis3Male__eCTRLCheeksBalloonPucker
+  - Genesis3Male__eCTRLCheeksBalloon
+  - Genesis3Male__eCTRLCheekFlexR
+  - Genesis3Male__eCTRLCheekFlexL
+  - Genesis3Male__eCTRLCheekFlex
+  - Genesis3Male__eCTRLCheekEyeFlexR
+  - Genesis3Male__eCTRLCheekEyeFlexL
+  - Genesis3Male__eCTRLCheekEyeFlex
+  - Genesis3Male__eCTRLCheekCrease
+  - Genesis3Male__eCTRLBrowUp-DownR
+  - Genesis3Male__eCTRLBrowUp-DownL
+  - Genesis3Male__eCTRLBrowUp-Down
+  - Genesis3Male__eCTRLBrowSqueeze
+  - Genesis3Male__eCTRLBrowOuterUp-DownR
+  - Genesis3Male__eCTRLBrowOuterUp-DownL
+  - Genesis3Male__eCTRLBrowOuterUp-Down
+  - Genesis3Male__eCTRLBrowInnerUp-DownR
+  - Genesis3Male__eCTRLBrowInnerUp-DownL
+  - Genesis3Male__eCTRLBrowInnerUp-Down
+  - head__eCTRLSurprised
+  - head__eCTRLSmile
+  - head__eCTRLFrown
+  - head__eCTRLFlirting
+  - head__eCTRLAngry
+  - head__eCTRLvW
+  - head__eCTRLvUW
+  - head__eCTRLvTH
+  - head__eCTRLvT
+  - head__eCTRLvSH
+  - head__eCTRLvS
+  - head__eCTRLvOW
+  - head__eCTRLvM
+  - head__eCTRLvL
+  - head__eCTRLvK
+  - head__eCTRLvIY
+  - head__eCTRLvIH
+  - head__eCTRLvF
+  - head__eCTRLvER
+  - head__eCTRLvEH
+  - head__eCTRLvEE
+  - head__eCTRLvAA
+  - head__eCTRLTongueUp-Down
+  - head__eCTRLTongueSide-Side
+  - head__eCTRLTongueRaise-Lower
+  - head__eCTRLTongueNarrow-Wide
+  - head__eCTRLTongueIn-Out
+  - head__eCTRLTongueBendTip
+  - head__eCTRLTongue Curl
+  - head__eCTRLNostrilsFlare
+  - head__eCTRLNoseWrinkle
+  - head__eCTRLNoseScrunch
+  - head__eCTRLMouthSmileSimpleR
+  - head__eCTRLMouthSmileSimpleL
+  - head__eCTRLMouthSmileSimple
+  - head__eCTRLMouthSmileOpen
+  - head__eCTRLMouthSmile
+  - head__eCTRLMouthSide-SideR
+  - head__eCTRLMouthSide-SideL
+  - head__eCTRLMouthSide-Side
+  - head__eCTRLMouthOpenWide
+  - head__eCTRLMouthOpen
+  - head__eCTRLMouthNarrowR
+  - head__eCTRLMouthNarrowL
+  - head__eCTRLMouthNarrow
+  - head__eCTRLMouthFrown
+  - head__eCTRLMouthCornerUp-Down
+  - head__eCTRLMouthCornerBackR
+  - head__eCTRLMouthCornerBackL
+  - head__eCTRLMouthCornerBack
+  - head__eCTRLLipTopUp-DownR
+  - head__eCTRLLipTopUp-DownL
+  - head__eCTRLLipTopUp-Down
+  - head__eCTRLLipTopIn-OutR
+  - head__eCTRLLipTopIn-OutL
+  - head__eCTRLLipTopIn-Out
+  - head__eCTRLLipsPuckerWide
+  - head__eCTRLLipsPucker
+  - head__eCTRLLipsPartCenter
+  - head__eCTRLLipsPart
+  - head__eCTRLLipBottomUp-DownR
+  - head__eCTRLLipBottomUp-DownL
+  - head__eCTRLLipBottomUp-Down
+  - head__eCTRLLipBottomIn-OutR
+  - head__eCTRLLipBottomIn-OutL
+  - head__eCTRLLipBottomIn-Out
+  - head__eCTRLJawSide-Side
+  - head__eCTRLJawOut-In
+  - head__eCTRLEyesUpDown
+  - head__eCTRLEyesSquintR
+  - head__eCTRLEyesSquintL
+  - head__eCTRLEyesSquint
+  - head__eCTRLEyesSideSide
+  - head__eCTRLEyesCrossed
+  - head__eCTRLEyesClosedR
+  - head__eCTRLEyesClosedL
+  - head__eCTRLEyesClosed
+  - head__eCTRLEyelidsUpperDownUpR
+  - head__eCTRLEyelidsUpperDownUpL
+  - head__eCTRLEyelidsUpperDownUp
+  - head__eCTRLEyelidsLowerUpDownR
+  - head__eCTRLEyelidsLowerUpDownL
+  - head__eCTRLEyelidsLowerUpDown
+  - head__eCTRLCheeksBalloonPucker
+  - head__eCTRLCheeksBalloon
+  - head__eCTRLCheekFlexR
+  - head__eCTRLCheekFlexL
+  - head__eCTRLCheekFlex
+  - head__eCTRLCheekEyeFlexR
+  - head__eCTRLCheekEyeFlexL
+  - head__eCTRLCheekEyeFlex
+  - head__eCTRLCheekCrease
+  - head__eCTRLBrowUp-DownR
+  - head__eCTRLBrowUp-DownL
+  - head__eCTRLBrowUp-Down
+  - head__eCTRLBrowSqueeze
+  - head__eCTRLBrowOuterUp-DownR
+  - head__eCTRLBrowOuterUp-DownL
+  - head__eCTRLBrowOuterUp-Down
+  - head__eCTRLBrowInnerUp-DownR
+  - head__eCTRLBrowInnerUp-DownL
+  - head__eCTRLBrowInnerUp-Down
+  lookUpIndex: 0
+  lookDownIndex: 0
+  lookLeftIndex: 0
+  lookRightIndex: 0
+  blinkIndex: 0
+  lookRandPosition: {x: 0, y: 0, z: 0}
+  lookAmount:
+    lookUp: 0
+    lookDown: 0
+    lookLeft: 0
+    lookRight: 0
+    blink: 0
+  randomEyes: 1
+  maxRandomInterval: 3
+  blendSpeed: 15
+  rangeOfMotion: 50
+  blinkDuration: 0.05
+  blinkSpeed: 50
+  openMax: 5
+  closeMax: 100
+  eyePosition: {fileID: 1070262570}
+  eyePosVerify: {fileID: 0}
+  lookTarget: {fileID: 0}
+  lookTargetTracking: {fileID: 0}
+  targetAffinity: 0
+  targetAffinityPercentage: 0.5
+  invertTracking: 0
+  trackBehind: 1
+  randomBlink: 1
+  maxBlinkInterval: 5
+  broadcastNeeded: 0
+  broadcastCS: 0
+  broadcastCSReceiversCount: 0
+  prevBroadcastCSReceiversCount: 0
+  expandBroadcastCS: 0
+  broadcastCSReceivers: []
+  propagateToChildrenCS: 0
+  selectedCustomShape: 204
+  noneShapeIndex: 204
+  excludeEyeShapes: 1
+  dynamicCustomShapes:
+  - Genesis3Male__eCTRLSurprised
+  - Genesis3Male__eCTRLSmile
+  - Genesis3Male__eCTRLFrown
+  - Genesis3Male__eCTRLFlirting
+  - Genesis3Male__eCTRLAngry
+  - Genesis3Male__eCTRLvW
+  - Genesis3Male__eCTRLvUW
+  - Genesis3Male__eCTRLvTH
+  - Genesis3Male__eCTRLvT
+  - Genesis3Male__eCTRLvSH
+  - Genesis3Male__eCTRLvS
+  - Genesis3Male__eCTRLvOW
+  - Genesis3Male__eCTRLvM
+  - Genesis3Male__eCTRLvL
+  - Genesis3Male__eCTRLvK
+  - Genesis3Male__eCTRLvIY
+  - Genesis3Male__eCTRLvIH
+  - Genesis3Male__eCTRLvF
+  - Genesis3Male__eCTRLvER
+  - Genesis3Male__eCTRLvEH
+  - Genesis3Male__eCTRLvEE
+  - Genesis3Male__eCTRLvAA
+  - Genesis3Male__eCTRLTongueUp-Down
+  - Genesis3Male__eCTRLTongueSide-Side
+  - Genesis3Male__eCTRLTongueRaise-Lower
+  - Genesis3Male__eCTRLTongueNarrow-Wide
+  - Genesis3Male__eCTRLTongueIn-Out
+  - Genesis3Male__eCTRLTongueBendTip
+  - Genesis3Male__eCTRLTongue Curl
+  - Genesis3Male__eCTRLNostrilsFlare
+  - Genesis3Male__eCTRLNoseWrinkle
+  - Genesis3Male__eCTRLNoseScrunch
+  - Genesis3Male__eCTRLMouthSmileSimpleR
+  - Genesis3Male__eCTRLMouthSmileSimpleL
+  - Genesis3Male__eCTRLMouthSmileSimple
+  - Genesis3Male__eCTRLMouthSmileOpen
+  - Genesis3Male__eCTRLMouthSmile
+  - Genesis3Male__eCTRLMouthSide-SideR
+  - Genesis3Male__eCTRLMouthSide-SideL
+  - Genesis3Male__eCTRLMouthSide-Side
+  - Genesis3Male__eCTRLMouthOpenWide
+  - Genesis3Male__eCTRLMouthOpen
+  - Genesis3Male__eCTRLMouthNarrowR
+  - Genesis3Male__eCTRLMouthNarrowL
+  - Genesis3Male__eCTRLMouthNarrow
+  - Genesis3Male__eCTRLMouthFrown
+  - Genesis3Male__eCTRLMouthCornerUp-Down
+  - Genesis3Male__eCTRLMouthCornerBackR
+  - Genesis3Male__eCTRLMouthCornerBackL
+  - Genesis3Male__eCTRLMouthCornerBack
+  - Genesis3Male__eCTRLLipTopUp-DownR
+  - Genesis3Male__eCTRLLipTopUp-DownL
+  - Genesis3Male__eCTRLLipTopUp-Down
+  - Genesis3Male__eCTRLLipTopIn-OutR
+  - Genesis3Male__eCTRLLipTopIn-OutL
+  - Genesis3Male__eCTRLLipTopIn-Out
+  - Genesis3Male__eCTRLLipsPuckerWide
+  - Genesis3Male__eCTRLLipsPucker
+  - Genesis3Male__eCTRLLipsPartCenter
+  - Genesis3Male__eCTRLLipsPart
+  - Genesis3Male__eCTRLLipBottomUp-DownR
+  - Genesis3Male__eCTRLLipBottomUp-DownL
+  - Genesis3Male__eCTRLLipBottomUp-Down
+  - Genesis3Male__eCTRLLipBottomIn-OutR
+  - Genesis3Male__eCTRLLipBottomIn-OutL
+  - Genesis3Male__eCTRLLipBottomIn-Out
+  - Genesis3Male__eCTRLJawSide-Side
+  - Genesis3Male__eCTRLJawOut-In
+  - Genesis3Male__eCTRLEyesUpDown
+  - Genesis3Male__eCTRLEyesSquintR
+  - Genesis3Male__eCTRLEyesSquintL
+  - Genesis3Male__eCTRLEyesSquint
+  - Genesis3Male__eCTRLEyesSideSide
+  - Genesis3Male__eCTRLEyesCrossed
+  - Genesis3Male__eCTRLEyesClosedR
+  - Genesis3Male__eCTRLEyesClosedL
+  - Genesis3Male__eCTRLEyesClosed
+  - Genesis3Male__eCTRLEyelidsUpperDownUpR
+  - Genesis3Male__eCTRLEyelidsUpperDownUpL
+  - Genesis3Male__eCTRLEyelidsUpperDownUp
+  - Genesis3Male__eCTRLEyelidsLowerUpDownR
+  - Genesis3Male__eCTRLEyelidsLowerUpDownL
+  - Genesis3Male__eCTRLEyelidsLowerUpDown
+  - Genesis3Male__eCTRLCheeksBalloonPucker
+  - Genesis3Male__eCTRLCheeksBalloon
+  - Genesis3Male__eCTRLCheekFlexR
+  - Genesis3Male__eCTRLCheekFlexL
+  - Genesis3Male__eCTRLCheekFlex
+  - Genesis3Male__eCTRLCheekEyeFlexR
+  - Genesis3Male__eCTRLCheekEyeFlexL
+  - Genesis3Male__eCTRLCheekEyeFlex
+  - Genesis3Male__eCTRLCheekCrease
+  - Genesis3Male__eCTRLBrowUp-DownR
+  - Genesis3Male__eCTRLBrowUp-DownL
+  - Genesis3Male__eCTRLBrowUp-Down
+  - Genesis3Male__eCTRLBrowSqueeze
+  - Genesis3Male__eCTRLBrowOuterUp-DownR
+  - Genesis3Male__eCTRLBrowOuterUp-DownL
+  - Genesis3Male__eCTRLBrowOuterUp-Down
+  - Genesis3Male__eCTRLBrowInnerUp-DownR
+  - Genesis3Male__eCTRLBrowInnerUp-DownL
+  - Genesis3Male__eCTRLBrowInnerUp-Down
+  - head__eCTRLSurprised
+  - head__eCTRLSmile
+  - head__eCTRLFrown
+  - head__eCTRLFlirting
+  - head__eCTRLAngry
+  - head__eCTRLvW
+  - head__eCTRLvUW
+  - head__eCTRLvTH
+  - head__eCTRLvT
+  - head__eCTRLvSH
+  - head__eCTRLvS
+  - head__eCTRLvOW
+  - head__eCTRLvM
+  - head__eCTRLvL
+  - head__eCTRLvK
+  - head__eCTRLvIY
+  - head__eCTRLvIH
+  - head__eCTRLvF
+  - head__eCTRLvER
+  - head__eCTRLvEH
+  - head__eCTRLvEE
+  - head__eCTRLvAA
+  - head__eCTRLTongueUp-Down
+  - head__eCTRLTongueSide-Side
+  - head__eCTRLTongueRaise-Lower
+  - head__eCTRLTongueNarrow-Wide
+  - head__eCTRLTongueIn-Out
+  - head__eCTRLTongueBendTip
+  - head__eCTRLTongue Curl
+  - head__eCTRLNostrilsFlare
+  - head__eCTRLNoseWrinkle
+  - head__eCTRLNoseScrunch
+  - head__eCTRLMouthSmileSimpleR
+  - head__eCTRLMouthSmileSimpleL
+  - head__eCTRLMouthSmileSimple
+  - head__eCTRLMouthSmileOpen
+  - head__eCTRLMouthSmile
+  - head__eCTRLMouthSide-SideR
+  - head__eCTRLMouthSide-SideL
+  - head__eCTRLMouthSide-Side
+  - head__eCTRLMouthOpenWide
+  - head__eCTRLMouthOpen
+  - head__eCTRLMouthNarrowR
+  - head__eCTRLMouthNarrowL
+  - head__eCTRLMouthNarrow
+  - head__eCTRLMouthFrown
+  - head__eCTRLMouthCornerUp-Down
+  - head__eCTRLMouthCornerBackR
+  - head__eCTRLMouthCornerBackL
+  - head__eCTRLMouthCornerBack
+  - head__eCTRLLipTopUp-DownR
+  - head__eCTRLLipTopUp-DownL
+  - head__eCTRLLipTopUp-Down
+  - head__eCTRLLipTopIn-OutR
+  - head__eCTRLLipTopIn-OutL
+  - head__eCTRLLipTopIn-Out
+  - head__eCTRLLipsPuckerWide
+  - head__eCTRLLipsPucker
+  - head__eCTRLLipsPartCenter
+  - head__eCTRLLipsPart
+  - head__eCTRLLipBottomUp-DownR
+  - head__eCTRLLipBottomUp-DownL
+  - head__eCTRLLipBottomUp-Down
+  - head__eCTRLLipBottomIn-OutR
+  - head__eCTRLLipBottomIn-OutL
+  - head__eCTRLLipBottomIn-Out
+  - head__eCTRLJawSide-Side
+  - head__eCTRLJawOut-In
+  - head__eCTRLEyesUpDown
+  - head__eCTRLEyesSquintR
+  - head__eCTRLEyesSquintL
+  - head__eCTRLEyesSquint
+  - head__eCTRLEyesSideSide
+  - head__eCTRLEyesCrossed
+  - head__eCTRLEyesClosedR
+  - head__eCTRLEyesClosedL
+  - head__eCTRLEyesClosed
+  - head__eCTRLEyelidsUpperDownUpR
+  - head__eCTRLEyelidsUpperDownUpL
+  - head__eCTRLEyelidsUpperDownUp
+  - head__eCTRLEyelidsLowerUpDownR
+  - head__eCTRLEyelidsLowerUpDownL
+  - head__eCTRLEyelidsLowerUpDown
+  - head__eCTRLCheeksBalloonPucker
+  - head__eCTRLCheeksBalloon
+  - head__eCTRLCheekFlexR
+  - head__eCTRLCheekFlexL
+  - head__eCTRLCheekFlex
+  - head__eCTRLCheekEyeFlexR
+  - head__eCTRLCheekEyeFlexL
+  - head__eCTRLCheekEyeFlex
+  - head__eCTRLCheekCrease
+  - head__eCTRLBrowUp-DownR
+  - head__eCTRLBrowUp-DownL
+  - head__eCTRLBrowUp-Down
+  - head__eCTRLBrowSqueeze
+  - head__eCTRLBrowOuterUp-DownR
+  - head__eCTRLBrowOuterUp-DownL
+  - head__eCTRLBrowOuterUp-Down
+  - head__eCTRLBrowInnerUp-DownR
+  - head__eCTRLBrowInnerUp-DownL
+  - head__eCTRLBrowInnerUp-Down
+  - None
+  customShapeCount: 204
+  expandCustomShapes: 0
+  customShapes:
+  - shapeIndex: 0
+    shapeName: Genesis3Male__eCTRLSurprised
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 1
+    shapeName: Genesis3Male__eCTRLSmile
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 2
+    shapeName: Genesis3Male__eCTRLFrown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 3
+    shapeName: Genesis3Male__eCTRLFlirting
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 4
+    shapeName: Genesis3Male__eCTRLAngry
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 5
+    shapeName: Genesis3Male__eCTRLvW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 6
+    shapeName: Genesis3Male__eCTRLvUW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 7
+    shapeName: Genesis3Male__eCTRLvTH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 8
+    shapeName: Genesis3Male__eCTRLvT
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 9
+    shapeName: Genesis3Male__eCTRLvSH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 10
+    shapeName: Genesis3Male__eCTRLvS
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 11
+    shapeName: Genesis3Male__eCTRLvOW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 12
+    shapeName: Genesis3Male__eCTRLvM
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 13
+    shapeName: Genesis3Male__eCTRLvL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 14
+    shapeName: Genesis3Male__eCTRLvK
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 15
+    shapeName: Genesis3Male__eCTRLvIY
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 16
+    shapeName: Genesis3Male__eCTRLvIH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 17
+    shapeName: Genesis3Male__eCTRLvF
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 18
+    shapeName: Genesis3Male__eCTRLvER
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 19
+    shapeName: Genesis3Male__eCTRLvEH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 20
+    shapeName: Genesis3Male__eCTRLvEE
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 21
+    shapeName: Genesis3Male__eCTRLvAA
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 22
+    shapeName: Genesis3Male__eCTRLTongueUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 23
+    shapeName: Genesis3Male__eCTRLTongueSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 24
+    shapeName: Genesis3Male__eCTRLTongueRaise-Lower
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 25
+    shapeName: Genesis3Male__eCTRLTongueNarrow-Wide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 26
+    shapeName: Genesis3Male__eCTRLTongueIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 27
+    shapeName: Genesis3Male__eCTRLTongueBendTip
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 28
+    shapeName: Genesis3Male__eCTRLTongue Curl
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 29
+    shapeName: Genesis3Male__eCTRLNostrilsFlare
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 30
+    shapeName: Genesis3Male__eCTRLNoseWrinkle
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 31
+    shapeName: Genesis3Male__eCTRLNoseScrunch
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 32
+    shapeName: Genesis3Male__eCTRLMouthSmileSimpleR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 33
+    shapeName: Genesis3Male__eCTRLMouthSmileSimpleL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 34
+    shapeName: Genesis3Male__eCTRLMouthSmileSimple
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 35
+    shapeName: Genesis3Male__eCTRLMouthSmileOpen
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 36
+    shapeName: Genesis3Male__eCTRLMouthSmile
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 37
+    shapeName: Genesis3Male__eCTRLMouthSide-SideR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 38
+    shapeName: Genesis3Male__eCTRLMouthSide-SideL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 39
+    shapeName: Genesis3Male__eCTRLMouthSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 40
+    shapeName: Genesis3Male__eCTRLMouthOpenWide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 41
+    shapeName: Genesis3Male__eCTRLMouthOpen
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 42
+    shapeName: Genesis3Male__eCTRLMouthNarrowR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 43
+    shapeName: Genesis3Male__eCTRLMouthNarrowL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 44
+    shapeName: Genesis3Male__eCTRLMouthNarrow
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 45
+    shapeName: Genesis3Male__eCTRLMouthFrown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 46
+    shapeName: Genesis3Male__eCTRLMouthCornerUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 47
+    shapeName: Genesis3Male__eCTRLMouthCornerBackR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 48
+    shapeName: Genesis3Male__eCTRLMouthCornerBackL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 49
+    shapeName: Genesis3Male__eCTRLMouthCornerBack
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 50
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 51
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 52
+    shapeName: Genesis3Male__eCTRLLipTopUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 53
+    shapeName: Genesis3Male__eCTRLLipTopIn-OutR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 54
+    shapeName: Genesis3Male__eCTRLLipTopIn-OutL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 55
+    shapeName: Genesis3Male__eCTRLLipTopIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 56
+    shapeName: Genesis3Male__eCTRLLipsPuckerWide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 57
+    shapeName: Genesis3Male__eCTRLLipsPucker
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 58
+    shapeName: Genesis3Male__eCTRLLipsPartCenter
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 59
+    shapeName: Genesis3Male__eCTRLLipsPart
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 60
+    shapeName: Genesis3Male__eCTRLLipBottomUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 61
+    shapeName: Genesis3Male__eCTRLLipBottomUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 62
+    shapeName: Genesis3Male__eCTRLLipBottomUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 63
+    shapeName: Genesis3Male__eCTRLLipBottomIn-OutR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 64
+    shapeName: Genesis3Male__eCTRLLipBottomIn-OutL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 65
+    shapeName: Genesis3Male__eCTRLLipBottomIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 66
+    shapeName: Genesis3Male__eCTRLJawSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 67
+    shapeName: Genesis3Male__eCTRLJawOut-In
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 68
+    shapeName: Genesis3Male__eCTRLEyesUpDown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 69
+    shapeName: Genesis3Male__eCTRLEyesSquintR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 70
+    shapeName: Genesis3Male__eCTRLEyesSquintL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 71
+    shapeName: Genesis3Male__eCTRLEyesSquint
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 72
+    shapeName: Genesis3Male__eCTRLEyesSideSide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 73
+    shapeName: Genesis3Male__eCTRLEyesCrossed
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 74
+    shapeName: Genesis3Male__eCTRLEyesClosedR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 75
+    shapeName: Genesis3Male__eCTRLEyesClosedL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 76
+    shapeName: Genesis3Male__eCTRLEyesClosed
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 77
+    shapeName: Genesis3Male__eCTRLEyelidsUpperDownUpR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 78
+    shapeName: Genesis3Male__eCTRLEyelidsUpperDownUpL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 79
+    shapeName: Genesis3Male__eCTRLEyelidsUpperDownUp
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 80
+    shapeName: Genesis3Male__eCTRLEyelidsLowerUpDownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 81
+    shapeName: Genesis3Male__eCTRLEyelidsLowerUpDownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 82
+    shapeName: Genesis3Male__eCTRLEyelidsLowerUpDown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 83
+    shapeName: Genesis3Male__eCTRLCheeksBalloonPucker
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 84
+    shapeName: Genesis3Male__eCTRLCheeksBalloon
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 85
+    shapeName: Genesis3Male__eCTRLCheekFlexR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 86
+    shapeName: Genesis3Male__eCTRLCheekFlexL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 87
+    shapeName: Genesis3Male__eCTRLCheekFlex
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 88
+    shapeName: Genesis3Male__eCTRLCheekEyeFlexR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 89
+    shapeName: Genesis3Male__eCTRLCheekEyeFlexL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 90
+    shapeName: Genesis3Male__eCTRLCheekEyeFlex
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 91
+    shapeName: Genesis3Male__eCTRLCheekCrease
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 92
+    shapeName: Genesis3Male__eCTRLBrowUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 93
+    shapeName: Genesis3Male__eCTRLBrowUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 94
+    shapeName: Genesis3Male__eCTRLBrowUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 95
+    shapeName: Genesis3Male__eCTRLBrowSqueeze
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 96
+    shapeName: Genesis3Male__eCTRLBrowOuterUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 97
+    shapeName: Genesis3Male__eCTRLBrowOuterUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 98
+    shapeName: Genesis3Male__eCTRLBrowOuterUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 99
+    shapeName: Genesis3Male__eCTRLBrowInnerUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 100
+    shapeName: Genesis3Male__eCTRLBrowInnerUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 101
+    shapeName: Genesis3Male__eCTRLBrowInnerUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 102
+    shapeName: head__eCTRLSurprised
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 103
+    shapeName: head__eCTRLSmile
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 104
+    shapeName: head__eCTRLFrown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 105
+    shapeName: head__eCTRLFlirting
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 106
+    shapeName: head__eCTRLAngry
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 107
+    shapeName: head__eCTRLvW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 108
+    shapeName: head__eCTRLvUW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 109
+    shapeName: head__eCTRLvTH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 110
+    shapeName: head__eCTRLvT
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 111
+    shapeName: head__eCTRLvSH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 112
+    shapeName: head__eCTRLvS
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 113
+    shapeName: head__eCTRLvOW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 114
+    shapeName: head__eCTRLvM
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 115
+    shapeName: head__eCTRLvL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 116
+    shapeName: head__eCTRLvK
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 117
+    shapeName: head__eCTRLvIY
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 118
+    shapeName: head__eCTRLvIH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 119
+    shapeName: head__eCTRLvF
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 120
+    shapeName: head__eCTRLvER
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 121
+    shapeName: head__eCTRLvEH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 122
+    shapeName: head__eCTRLvEE
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 123
+    shapeName: head__eCTRLvAA
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 124
+    shapeName: head__eCTRLTongueUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 125
+    shapeName: head__eCTRLTongueSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 126
+    shapeName: head__eCTRLTongueRaise-Lower
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 127
+    shapeName: head__eCTRLTongueNarrow-Wide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 128
+    shapeName: head__eCTRLTongueIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 129
+    shapeName: head__eCTRLTongueBendTip
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 130
+    shapeName: head__eCTRLTongue Curl
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 131
+    shapeName: head__eCTRLNostrilsFlare
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 132
+    shapeName: head__eCTRLNoseWrinkle
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 133
+    shapeName: head__eCTRLNoseScrunch
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 134
+    shapeName: head__eCTRLMouthSmileSimpleR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 135
+    shapeName: head__eCTRLMouthSmileSimpleL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 136
+    shapeName: head__eCTRLMouthSmileSimple
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 137
+    shapeName: head__eCTRLMouthSmileOpen
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 138
+    shapeName: head__eCTRLMouthSmile
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 139
+    shapeName: head__eCTRLMouthSide-SideR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 140
+    shapeName: head__eCTRLMouthSide-SideL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 141
+    shapeName: head__eCTRLMouthSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 142
+    shapeName: head__eCTRLMouthOpenWide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 143
+    shapeName: head__eCTRLMouthOpen
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 144
+    shapeName: head__eCTRLMouthNarrowR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 145
+    shapeName: head__eCTRLMouthNarrowL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 146
+    shapeName: head__eCTRLMouthNarrow
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 147
+    shapeName: head__eCTRLMouthFrown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 148
+    shapeName: head__eCTRLMouthCornerUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 149
+    shapeName: head__eCTRLMouthCornerBackR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 150
+    shapeName: head__eCTRLMouthCornerBackL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 151
+    shapeName: head__eCTRLMouthCornerBack
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 152
+    shapeName: head__eCTRLLipTopUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 153
+    shapeName: head__eCTRLLipTopUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 154
+    shapeName: head__eCTRLLipTopUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 155
+    shapeName: head__eCTRLLipTopIn-OutR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 156
+    shapeName: head__eCTRLLipTopIn-OutL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 157
+    shapeName: head__eCTRLLipTopIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 158
+    shapeName: head__eCTRLLipsPuckerWide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 159
+    shapeName: head__eCTRLLipsPucker
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 160
+    shapeName: head__eCTRLLipsPartCenter
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 161
+    shapeName: head__eCTRLLipsPart
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 162
+    shapeName: head__eCTRLLipBottomUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 163
+    shapeName: head__eCTRLLipBottomUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 164
+    shapeName: head__eCTRLLipBottomUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 165
+    shapeName: head__eCTRLLipBottomIn-OutR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 166
+    shapeName: head__eCTRLLipBottomIn-OutL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 167
+    shapeName: head__eCTRLLipBottomIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 168
+    shapeName: head__eCTRLJawSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 169
+    shapeName: head__eCTRLJawOut-In
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 170
+    shapeName: head__eCTRLEyesUpDown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 171
+    shapeName: head__eCTRLEyesSquintR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 172
+    shapeName: head__eCTRLEyesSquintL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 173
+    shapeName: head__eCTRLEyesSquint
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 174
+    shapeName: head__eCTRLEyesSideSide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 175
+    shapeName: head__eCTRLEyesCrossed
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 176
+    shapeName: head__eCTRLEyesClosedR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 177
+    shapeName: head__eCTRLEyesClosedL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 178
+    shapeName: head__eCTRLEyesClosed
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 179
+    shapeName: head__eCTRLEyelidsUpperDownUpR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 180
+    shapeName: head__eCTRLEyelidsUpperDownUpL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 181
+    shapeName: head__eCTRLEyelidsUpperDownUp
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 182
+    shapeName: head__eCTRLEyelidsLowerUpDownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 183
+    shapeName: head__eCTRLEyelidsLowerUpDownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 184
+    shapeName: head__eCTRLEyelidsLowerUpDown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 185
+    shapeName: head__eCTRLCheeksBalloonPucker
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 186
+    shapeName: head__eCTRLCheeksBalloon
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 187
+    shapeName: head__eCTRLCheekFlexR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 188
+    shapeName: head__eCTRLCheekFlexL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 189
+    shapeName: head__eCTRLCheekFlex
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 190
+    shapeName: head__eCTRLCheekEyeFlexR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 191
+    shapeName: head__eCTRLCheekEyeFlexL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 192
+    shapeName: head__eCTRLCheekEyeFlex
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 193
+    shapeName: head__eCTRLCheekCrease
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 194
+    shapeName: head__eCTRLBrowUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 195
+    shapeName: head__eCTRLBrowUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 196
+    shapeName: head__eCTRLBrowUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 197
+    shapeName: head__eCTRLBrowSqueeze
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 198
+    shapeName: head__eCTRLBrowOuterUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 199
+    shapeName: head__eCTRLBrowOuterUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 200
+    shapeName: head__eCTRLBrowOuterUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 201
+    shapeName: head__eCTRLBrowInnerUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 202
+    shapeName: head__eCTRLBrowInnerUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 203
+    shapeName: head__eCTRLBrowInnerUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  randomCustomShapes: 1
+  maxCustomShapeInterval: 3
+  randomCSBlendSpeedMin: 0.75
+  randomCSBlendSpeedMax: 2
+  randomCSRangeOfMotionMin: 10
+  randomCSRangeOfMotionMax: 40
+  randomCSDurationMin: 0.25
+  randomCSDurationMax: 2.5
+  csNotRandomToggle: 1
+  useCustomShapesOnly: 1
+  showEyeShapes: 1
+  showTracking: 1
+  showEyeProps: 1
+  showCustom: 1
+  showBroadcast: 1
+  showBroadcastCS: 1
+  expandShapeGroups: 0
+  groups: []
+  shapeGroupCount: 0
+--- !u!114 &742268427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1624661579, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salsa3D: {fileID: 0}
+  skinnedMeshRenderer: {fileID: 0}
+  prevSkinnedMeshRenderer: {fileID: 0}
+  getSkndMshRndr: 0
+  blendShapes: []
+  lookUpIndex: 0
+  lookDownIndex: 0
+  lookLeftIndex: 0
+  lookRightIndex: 0
+  blinkIndex: 0
+  lookRandPosition: {x: 0, y: 0, z: 0}
+  lookAmount:
+    lookUp: 0
+    lookDown: 0
+    lookLeft: 0
+    lookRight: 0
+    blink: 0
+  randomEyes: 1
+  maxRandomInterval: 3
+  blendSpeed: 15
+  rangeOfMotion: 60
+  blinkDuration: 0.03
+  blinkSpeed: 30
+  openMax: 5
+  closeMax: 100
+  eyePosition: {fileID: 1070262570}
+  eyePosVerify: {fileID: 1070262570}
+  lookTarget: {fileID: 0}
+  lookTargetTracking: {fileID: 0}
+  targetAffinity: 0
+  targetAffinityPercentage: 0.5
+  invertTracking: 0
+  trackBehind: 1
+  randomBlink: 1
+  maxBlinkInterval: 5
+  broadcastNeeded: 0
+  broadcastCS: 0
+  broadcastCSReceiversCount: 0
+  prevBroadcastCSReceiversCount: 0
+  expandBroadcastCS: 0
+  broadcastCSReceivers: []
+  propagateToChildrenCS: 0
+  selectedCustomShape: 0
+  noneShapeIndex: 0
+  excludeEyeShapes: 1
+  dynamicCustomShapes: []
+  customShapeCount: 0
+  expandCustomShapes: 0
+  customShapes: []
+  randomCustomShapes: 1
+  maxCustomShapeInterval: 3
+  randomCSBlendSpeedMin: 0.75
+  randomCSBlendSpeedMax: 2
+  randomCSRangeOfMotionMin: 10
+  randomCSRangeOfMotionMax: 40
+  randomCSDurationMin: 0.25
+  randomCSDurationMax: 2.5
+  csNotRandomToggle: 0
+  useCustomShapesOnly: 0
+  showEyeShapes: 1
+  showTracking: 1
+  showEyeProps: 1
+  showCustom: 1
+  showBroadcast: 1
+  showBroadcastCS: 1
+  expandShapeGroups: 0
+  groups: []
+  shapeGroupCount: 0
+--- !u!82 &742268428
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &742268429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1976067524, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skinnedMeshRenderer: {fileID: 0}
+  prevSkinnedMeshRenderer: {fileID: 0}
+  getSkndMshRndr: 0
+  audioSrc: {fileID: 742268428}
+  audioClip: {fileID: 0}
+  blendShapes: []
+  saySmallIndex: 0
+  sayMediumIndex: 0
+  sayLargeIndex: 0
+  saySmallTrigger: 0.0005
+  sayMediumTrigger: 0.0025
+  sayLargeTrigger: 0.005
+  audioUpdateDelay: 0.08
+  blendSpeed: 10
+  rangeOfMotion: 75
+  isTalking: 0
+  prevIsTalking: 0
+  broadcast: 0
+  broadcastReceiversCount: 1
+  expandBroadcast: 0
+  broadcastReceivers: []
+  propagateToChildren: 0
+  average: 0
+  say: 
+  sayIndex: 0
+  sayAmount:
+    saySmall: 0
+    sayMedium: 0
+    sayLarge: 0
+  prevAudioUpdateDelay: 0
 --- !u!1 &807289980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,6 +4568,47 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1070262570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1070262571}
+  - component: {fileID: 1070262572}
+  m_Layer: 0
+  m_Name: RandomEyes3D_Eye_Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1070262571
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070262570}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0653242, z: 0.08103939}
+  m_LocalScale: {x: 0.022546142, y: 0.0225461, z: 0.0225461}
+  m_Children: []
+  m_Father: {fileID: 739142046}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1070262572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070262570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -818653955, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showGizmo: 1
 --- !u!1 &1070810872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +4647,10 @@ Transform:
   m_PrefabParentObject: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da,
     type: 2}
   m_PrefabInternal: {fileID: 807427922}
+--- !u!1 &1125159900 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100218, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
 --- !u!1 &1225720844
 GameObject:
   m_ObjectHideFlags: 0
@@ -3343,7 +6020,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 200
-  field of view: 7
+  field of view: 10
   orthographic: 0
   orthographic size: 1.5
   m_Depth: 11
@@ -3745,47 +6422,59 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &2079958048
+--- !u!1001 &2054739296
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 400022, guid: 618b7f6679936cf4c99ac1b4cfed56c9, type: 3}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400022, guid: 618b7f6679936cf4c99ac1b4cfed56c9, type: 3}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -75.23
       objectReference: {fileID: 0}
-    - target: {fileID: 400022, guid: 618b7f6679936cf4c99ac1b4cfed56c9, type: 3}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -6.71
       objectReference: {fileID: 0}
-    - target: {fileID: 400022, guid: 618b7f6679936cf4c99ac1b4cfed56c9, type: 3}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400022, guid: 618b7f6679936cf4c99ac1b4cfed56c9, type: 3}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400022, guid: 618b7f6679936cf4c99ac1b4cfed56c9, type: 3}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 400022, guid: 618b7f6679936cf4c99ac1b4cfed56c9, type: 3}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 400022, guid: 618b7f6679936cf4c99ac1b4cfed56c9, type: 3}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 44.353485
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 44.353577
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 44.353577
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 618b7f6679936cf4c99ac1b4cfed56c9, type: 3}
+  m_ParentPrefab: {fileID: 100100000, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
   m_IsPrefabParent: 0
 --- !u!1 &2121325272
 GameObject:
