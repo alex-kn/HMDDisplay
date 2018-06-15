@@ -16,7 +16,6 @@ public abstract class CueBehavior : MonoBehaviour {
     public virtual void Start()
     {
         fixationPointMovement = fixationPoint.GetComponent<FixationPointMovement>();
-        //ResetCues();
     }
 
     protected virtual void SetNeedsAssist(bool needsAssist)
@@ -56,21 +55,33 @@ public abstract class CueBehavior : MonoBehaviour {
 
     public void ToggleNeedsAssist()
     {
+        SetIsAttentive(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
         SetNeedsAssist(!needsAssist);
     }
 
     public void ToggleReferencingObject()
     {
+        SetNeedsAssist(false);
+        SetIsAttentive(false);
+        SetExpectsResponse(false);
         SetReferencingObject(!referencingObject);
     }
 
     public void ToggleExpectsResponse()
     {
+        SetNeedsAssist(false);
+        SetIsAttentive(false);
+        SetReferencingObject(false);
         SetExpectsResponse(!expectsResponse);
     }
 
     public void ToggleIsAttentive()
     {
+        SetNeedsAssist(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
         SetIsAttentive(!isAttentive);
     }
 }

@@ -59,7 +59,11 @@ public class InterlocutorPosition : MonoBehaviour
             Vector3 p = phoneCam.ScreenToWorldPoint(new Vector3((lastPosition[0] / phoneCameraWidth) * phoneCam.pixelWidth, phoneCam.pixelHeight - (lastPosition[1] / phoneCameraHeight) * phoneCam.pixelHeight, phoneCam.nearClipPlane));
             float step = speed * Time.deltaTime;
 
-            interlocPos.transform.position = Vector3.MoveTowards(interlocPos.transform.position, p, step);
+            float d = Vector3.Distance(interlocPos.transform.position, p);
+            interlocPos.transform.position = Vector3.MoveTowards(interlocPos.transform.position, p, 0.5f*d);
+
+            //float f = 1 - 1 / d;
+            //interlocPos.transform.position = Vector3.Lerp(interlocPos.transform.position, p, f);
 
            
         }
@@ -68,4 +72,23 @@ public class InterlocutorPosition : MonoBehaviour
             //lastPosition = new float[] { 640, 480 };
         }
     }
+
+    public void TurnOnFaceTracking()
+    {
+        if (isAndroid)
+        {
+
+        faceTracker.Call("turnOn");
+        }
+    }
+
+    public void TurnOffFaceTracking()
+    {
+        if (isAndroid)
+        {
+        faceTracker.Call("turnOff");
+
+        }
+    }
+
 }

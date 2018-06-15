@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColorCueBehavior : CueBehavior
 {
-    private Renderer rend;
+
+    private Image image;
 
     public override void Start()
     {
         base.Start();
-        rend = GetComponent<Renderer>();
+        image = GetComponent<Image>();
     }
 
     protected override void SetNeedsAssist(bool needsAssist)
@@ -17,7 +19,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetNeedsAssist(needsAssist);
         if (needsAssist)
         {
-            rend.material.color = Color.yellow;
+            image.color = Color.yellow;
         }
         else
         {
@@ -30,7 +32,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetReferencingObject(referencingObject);
         if (referencingObject)
         {
-            rend.material.color = Color.blue;
+            image.color = Color.blue;
 
         }
         else
@@ -44,7 +46,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetIsAttentive(isAttentive);
         if (isAttentive)
         {
-            rend.material.color = Color.red;
+            image.color = Color.red;
         }
         else
         {
@@ -57,7 +59,7 @@ public class ColorCueBehavior : CueBehavior
         base.SetExpectsResponse(expectsResponse);
         if (expectsResponse)
         {
-            rend.material.color = Color.green;
+            image.color = Color.green;
         }
         else
         {
@@ -67,6 +69,6 @@ public class ColorCueBehavior : CueBehavior
 
     protected override void SetNeutral()
     {
-        rend.material.color = Color.black;
+        image.color = Color.black;
     }
 }
