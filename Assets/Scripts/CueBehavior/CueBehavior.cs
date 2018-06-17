@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Controls the cues that the augmentation is displaying. Only one cue can be active at a time.
+ */
 public abstract class CueBehavior : MonoBehaviour {
 
     public GameObject fixationPoint;
@@ -42,14 +45,6 @@ public abstract class CueBehavior : MonoBehaviour {
         this.isAttentive = isAttentive;
     }
 
-
-    public void ResetCues()
-    {
-        SetNeedsAssist(false);
-        SetIsAttentive(false);
-        SetReferencingObject(false);
-        SetExpectsResponse(false);
-    }
 
     protected abstract void SetNeutral();
 

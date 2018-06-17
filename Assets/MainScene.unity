@@ -4359,8 +4359,8 @@ MonoBehaviour:
     blink: 0
   randomEyes: 1
   maxRandomInterval: 3
-  blendSpeed: 15
-  rangeOfMotion: 60
+  blendSpeed: 95
+  rangeOfMotion: 100
   blinkDuration: 0.03
   blinkSpeed: 30
   openMax: 5
@@ -4369,8 +4369,8 @@ MonoBehaviour:
   eyePosVerify: {fileID: 1070262570}
   lookTarget: {fileID: 564624671}
   lookTargetTracking: {fileID: 564624671}
-  targetAffinity: 1
-  targetAffinityPercentage: 0.784
+  targetAffinity: 0
+  targetAffinityPercentage: 0.95
   invertTracking: 0
   trackBehind: 1
   randomBlink: 1
@@ -5060,7 +5060,7 @@ Camera:
     height: 1
   near clip plane: 100
   far clip plane: 1000
-  field of view: 44.8
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 5
@@ -5085,7 +5085,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1225720844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.1, y: -2.98, z: 10}
+  m_LocalPosition: {x: 7, y: -3, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6961,7 +6961,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.49
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6997,7 +6997,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}

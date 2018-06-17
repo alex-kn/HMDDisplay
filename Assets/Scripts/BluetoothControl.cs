@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Handles the Bluetooth communication to remotely control switching representations and cues.
+ */
 public class BluetoothControl : MonoBehaviour {
 
     AndroidJavaObject bluetoothController;
@@ -26,12 +29,9 @@ public class BluetoothControl : MonoBehaviour {
 
         if (isAndroid)
         {
-            Debug.Log("Android found.");
-
             AndroidJavaClass unitPlayerClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             AndroidJavaObject activity = unitPlayerClass.GetStatic<AndroidJavaObject>("currentActivity");
             bluetoothController = new AndroidJavaObject("ak.hmddisplay.bluetoothconnect.BluetoothController", activity);
-            
             bluetoothController.Call("addBluetoothListener", new CueCallback(activateCueHandler, switchRepresentationHandler));
 
             StartBluetooth();
@@ -45,7 +45,6 @@ public class BluetoothControl : MonoBehaviour {
             if (taskQueue.Count > 0)
             {
                 taskQueue.Dequeue()();
-
             }
         }
 	}
@@ -56,6 +55,9 @@ public class BluetoothControl : MonoBehaviour {
         bluetoothController.Call("connectAsServer");
     }
 
+    /**
+     * Callback proxy implementing an interface in Java code to handle calls from Java to Unity
+     */
     class CueCallback : AndroidJavaProxy
     {
 
@@ -67,6 +69,12 @@ public class BluetoothControl : MonoBehaviour {
             this.cueCallback = cueCallback;
             this.repCallback = repCallback;
         }
+
+        /** 
+         * Callback referenced in Java code to handle incoming messages
+         * 
+         * code denotes the action that is to be taken (switch representation, switch cues)
+         */
         public void onMessageReceived(string code)
         {
             Debug.Log("Message Received: " + code);
