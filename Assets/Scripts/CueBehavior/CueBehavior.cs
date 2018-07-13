@@ -79,4 +79,45 @@ public abstract class CueBehavior : MonoBehaviour {
         SetExpectsResponse(false);
         SetIsAttentive(!isAttentive);
     }
+
+
+    public void NeedsAssist()
+    {
+        SetIsAttentive(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
+        SetNeedsAssist(true);
+    }
+
+    public void ReferencingObject()
+    {
+        SetNeedsAssist(false);
+        SetIsAttentive(false);
+        SetExpectsResponse(false);
+        SetReferencingObject(true);
+    }
+
+    public void ExpectsResponse()
+    {
+        SetNeedsAssist(false);
+        SetIsAttentive(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(true);
+    }
+
+    public void NotAttentive()
+    {
+        SetNeedsAssist(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
+        SetIsAttentive(true);
+    }
+
+    public void ResetCues()
+    {
+        SetNeedsAssist(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
+        SetIsAttentive(false);
+    }
 }

@@ -24,6 +24,12 @@ public class CueClickController : MonoBehaviour
         referenceObject.onClick.AddListener(ReferencinObject);
         respondToMeButton.onClick.AddListener(RespondToMe);
         iAmAttentiveButton.onClick.AddListener(IAmAttentive);
+
+        //remove text which is only for testing purposes
+        assistMeButton.GetComponentInChildren<Text>().text = "";
+        referenceObject.GetComponentInChildren<Text>().text = "";
+        respondToMeButton.GetComponentInChildren<Text>().text = "";
+        iAmAttentiveButton.GetComponentInChildren<Text>().text = "";
     }
 
     internal void ActivateCue(string cueCode)
@@ -32,16 +38,19 @@ public class CueClickController : MonoBehaviour
         switch (cueCode)
         {
             case "1":
-                AssistMe();
+                cueBehavior.NeedsAssist();
                 break;
             case "2":
-                IAmAttentive();
+                cueBehavior.NotAttentive();
                 break;
             case "3":
-                ReferencinObject();
+                cueBehavior.ReferencingObject();
                 break;
             case "4":
-                RespondToMe();
+                cueBehavior.ExpectsResponse();
+                break;
+            case "5":
+                cueBehavior.ResetCues();
                 break;
             default:
                 Debug.LogError("Cue code not found");

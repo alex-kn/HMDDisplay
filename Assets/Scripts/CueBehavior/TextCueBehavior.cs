@@ -23,7 +23,7 @@ public class TextCueBehavior : CueBehavior
         base.SetNeedsAssist(needsAssist);
         if (needsAssist)
         {
-            text.text = "I need Help!";
+            text.text = "Help";
         }
         else
         {
@@ -36,7 +36,7 @@ public class TextCueBehavior : CueBehavior
         base.SetReferencingObject(referencingObject);
         if (referencingObject)
         {
-            text.text = "This one!";
+            text.text = "This one";
         }
         else
         {
@@ -49,7 +49,7 @@ public class TextCueBehavior : CueBehavior
         base.SetIsAttentive(isAttentive);
         if (isAttentive)
         {
-            text.text = "Inattentive";
+            text.text = "Not Attentive";
         }
         else
         {
@@ -62,7 +62,7 @@ public class TextCueBehavior : CueBehavior
         base.SetExpectsResponse(expectsResponse);
         if (expectsResponse)
         {
-            text.text = "Your Turn!";
+            text.text = "Your Turn";
         }
         else
         {

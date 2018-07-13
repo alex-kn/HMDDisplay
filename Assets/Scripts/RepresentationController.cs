@@ -22,6 +22,8 @@ public class RepresentationController : MonoBehaviour {
         {
             representation.SetActive(false);
         }
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        switchRepresentationButton.GetComponentInChildren<Text>().text = "";
     }
 
     public void SwitchRepresentation()
