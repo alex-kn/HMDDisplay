@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * NOT USED
+ */
 public class Calibration : MonoBehaviour {
 
     public Button left;

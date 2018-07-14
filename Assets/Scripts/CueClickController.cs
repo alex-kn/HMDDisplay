@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * Controls which cue is currently active
+ */
 public class CueClickController : MonoBehaviour
 {
 
@@ -21,63 +24,39 @@ public class CueClickController : MonoBehaviour
         referenceObject.onClick.AddListener(ReferencinObject);
         respondToMeButton.onClick.AddListener(RespondToMe);
         iAmAttentiveButton.onClick.AddListener(IAmAttentive);
-        
 
+        //remove text which is only for testing purposes
+        assistMeButton.GetComponentInChildren<Text>().text = "";
+        referenceObject.GetComponentInChildren<Text>().text = "";
+        respondToMeButton.GetComponentInChildren<Text>().text = "";
+        iAmAttentiveButton.GetComponentInChildren<Text>().text = "";
     }
-/**
-    private void LateUpdate()
-    {
-        if (cueBehavior != null)
-        {
 
-            UpdateButtonColor(assistMeButton, cueBehavior.needsAssist);
-            UpdateButtonColor(referenceObject, cueBehavior.referencingObject);
-            UpdateButtonColor(respondToMeButton, cueBehavior.expectsResponse);
-            UpdateButtonColor(iAmAttentiveButton, cueBehavior.isAttentive);
-        }
-    }
-*/
     internal void ActivateCue(string cueCode)
     {
         Debug.Log("Activating Cue " + cueCode);
         switch (cueCode)
         {
             case "1":
-                AssistMe();
+                cueBehavior.NeedsAssist();
                 break;
             case "2":
-                IAmAttentive();
+                cueBehavior.NotAttentive();
                 break;
             case "3":
-                ReferencinObject();
+                cueBehavior.ReferencingObject();
                 break;
             case "4":
-                RespondToMe();
+                cueBehavior.ExpectsResponse();
+                break;
+            case "5":
+                cueBehavior.ResetCues();
                 break;
             default:
                 Debug.LogError("Cue code not found");
                 break;
         }
     }
-
-    private void UpdateButtonColor(Button button, bool value)
-    {
-        if (value)
-        {
-            ColorBlock cb = button.colors;
-            cb.normalColor = Color.green;
-            cb.highlightedColor = Color.green;
-            button.colors = cb;
-        }
-        else
-        {
-            ColorBlock cb = button.colors;
-            cb.normalColor = Color.white;
-            cb.highlightedColor = Color.white;
-            button.colors = cb;
-        }
-    }
-
    
 
     void AssistMe()
@@ -103,14 +82,5 @@ public class CueClickController : MonoBehaviour
     public void SetCueBehavior(CueBehavior cueBehavior)
     {
         this.cueBehavior = cueBehavior;
-    }
-
-    enum CueCode
-    {
-        Assist = 1,
-        Attentive = 2,
-        Referencing = 3,
-        Response = 4
-
     }
 }

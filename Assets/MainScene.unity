@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 1.95
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311807, g: 0.3807417, b: 0.35872984, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -233,7 +233,7 @@ Canvas:
   m_GameObject: {fileID: 87257430}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1900423170}
   m_PlaneDistance: 6.02
   m_PixelPerfect: 0
@@ -260,7 +260,7 @@ RectTransform:
   - {fileID: 1780512530}
   - {fileID: 1568146049}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -462,7 +462,7 @@ Transform:
   - {fileID: 1843552287}
   - {fileID: 32517855}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &107457423
 MonoBehaviour:
@@ -554,6 +554,93 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 184336462}
   m_Mesh: {fileID: 4300002, guid: 3190735462d19ec4f8dc6b7f8ed24920, type: 3}
+--- !u!1 &210263858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 210263862}
+  - component: {fileID: 210263861}
+  - component: {fileID: 210263860}
+  - component: {fileID: 210263859}
+  m_Layer: 0
+  m_Name: Plane (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &210263859
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210263858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &210263860
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210263858}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: ebf99b7d5bdd3aa48b8fe4364de766fe, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &210263861
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210263858}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &210263862
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 210263858}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 10, y: 0, z: -40}
+  m_LocalScale: {x: 3, y: 1, z: 10}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &247869289
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,7 +654,7 @@ GameObject:
   - component: {fileID: 247869291}
   - component: {fileID: 247869290}
   m_Layer: 0
-  m_Name: ColorRepresentation
+  m_Name: zColorRepresentation
   m_TagString: Augmentation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -651,14 +738,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 247869289}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.01}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.70710677, w: 0}
+  m_LocalPosition: {x: 60, y: -0, z: 50}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 595033497}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 180}
 --- !u!1 &249710837
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +806,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &263218419
 Prefab:
@@ -772,6 +859,74 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bfa5ae8035586e644a78dd7622dc6c24, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &300739098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 300739099}
+  - component: {fileID: 300739101}
+  - component: {fileID: 300739100}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &300739099
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300739098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 735623716}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &300739100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300739098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &300739101
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300739098}
 --- !u!1 &309396441
 GameObject:
   m_ObjectHideFlags: 0
@@ -825,7 +980,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: 3
+  m_Depth: 10
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -846,13 +1001,100 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 309396441}
-  m_LocalRotation: {x: 0.13104801, y: 0.79098415, z: -0.18210419, w: 0.56921756}
-  m_LocalPosition: {x: -19.27, y: 10.92, z: 10.37}
+  m_LocalRotation: {x: 0.08707685, y: 0.78922987, z: -0.59688985, w: 0.115136236}
+  m_LocalPosition: {x: -7.57, y: 79.5, z: 62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 25.93, y: 108.52, z: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 74.2, y: 163.4, z: 0}
+--- !u!1 &329685156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 329685160}
+  - component: {fileID: 329685159}
+  - component: {fileID: 329685158}
+  - component: {fileID: 329685157}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &329685157
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329685156}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &329685158
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329685156}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: ebf99b7d5bdd3aa48b8fe4364de766fe, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &329685159
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329685156}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &329685160
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329685156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -12.48, z: -40}
+  m_LocalScale: {x: 2, y: 1, z: 10}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &332977133 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1627634424735680, guid: 0c5986fdb5ae4474c823925c0b1854da,
@@ -863,6 +1105,155 @@ Transform:
   m_PrefabParentObject: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da,
     type: 2}
   m_PrefabInternal: {fileID: 2047519075}
+--- !u!1 &355023649 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100050, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
+--- !u!1 &460869888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 460869895}
+  - component: {fileID: 460869894}
+  - component: {fileID: 460869893}
+  - component: {fileID: 460869892}
+  - component: {fileID: 460869891}
+  - component: {fileID: 460869890}
+  - component: {fileID: 460869889}
+  m_Layer: 5
+  m_Name: ColorRepresentationCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &460869889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460869888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63f2bfe7f8e3694458c29c69a31ba495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixationPoint: {fileID: 564624671}
+  needsAssist: 0
+  referencingObject: 0
+  expectsResponse: 0
+  isAttentive: 0
+--- !u!114 &460869890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460869888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8113208, g: 0.34825563, b: 0.34825563, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &460869891
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460869888}
+--- !u!114 &460869892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460869888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &460869893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460869888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &460869894
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460869888}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &460869895
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 460869888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &464473031
 GameObject:
   m_ObjectHideFlags: 0
@@ -953,7 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1126,11 +1517,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   representations:
-  - {fileID: 107457421}
-  - {fileID: 247869289}
-  - {fileID: 1956205200}
+  - {fileID: 742268424}
+  - {fileID: 460869888}
+  - {fileID: 735623712}
   cueClickController: {fileID: 87257435}
   switchRepresentationButton: {fileID: 685509060}
+  interlocutorPosition: {fileID: 1225720849}
 --- !u!224 &527945624
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1143,7 +1535,7 @@ RectTransform:
   m_Children:
   - {fileID: 685509059}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1195,7 +1587,7 @@ Canvas:
   m_GameObject: {fileID: 527945622}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1900423170}
   m_PlaneDistance: 5.61
   m_PixelPerfect: 0
@@ -1225,6 +1617,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 682607685}
+  - component: {fileID: 682607686}
   m_Layer: 0
   m_Name: InterlocutorPosition
   m_TagString: InterlocutorPosition
@@ -1239,13 +1632,25 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 682607684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 15}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 807289984}
+  - {fileID: 1900423171}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &682607686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 682607684}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549ecf289e8bc874088265d9c0910062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &685509058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,7 +1913,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &727351787
 Prefab:
@@ -1561,6 +1966,2774 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &735623712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 735623716}
+  - component: {fileID: 735623715}
+  - component: {fileID: 735623714}
+  - component: {fileID: 735623713}
+  - component: {fileID: 735623718}
+  - component: {fileID: 735623719}
+  m_Layer: 5
+  m_Name: TextRepresentationCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &735623713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735623712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &735623714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735623712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &735623715
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735623712}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &735623716
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735623712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 300739099}
+  - {fileID: 1799215625}
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!222 &735623718
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735623712}
+--- !u!114 &735623719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735623712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c876919a325ec4abede455fed56387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixationPoint: {fileID: 564624671}
+  needsAssist: 0
+  referencingObject: 0
+  expectsResponse: 0
+  isAttentive: 0
+  assText: {fileID: 0}
+  refText: {fileID: 0}
+  resText: {fileID: 0}
+  attText: {fileID: 0}
+  text: {fileID: 1799215623}
+--- !u!4 &739142046 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400018, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
+--- !u!137 &739976886 stripped
+SkinnedMeshRenderer:
+  m_PrefabParentObject: {fileID: 13700000, guid: b3c4d06429b76d04bb03ba6c0e5a050e,
+    type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
+--- !u!1 &742268424 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
+--- !u!114 &742268425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93b575685a60ed94580fb1378193d209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salsa3D: {fileID: 0}
+  randomEyes3D: {fileID: 742268427}
+  skinnedMeshRenderer: {fileID: 739976886}
+  leftEyeName: lEye
+  leftEyeBone: {fileID: 355023649}
+  rightEyeName: rEye
+  rightEyeBone: {fileID: 1125159900}
+  leftBlinkShapes: EyesClosedL,BlinkLeft,Blink_l
+  rightBlinkShapes: EyesClosedR,BlinkRight,Blink_r
+  leftBlinkIndex: 75
+  rightBlinkIndex: 74
+  leftBlinkShape: Genesis3Male__eCTRLEyesClosedL
+  rightBlinkShape: Genesis3Male__eCTRLEyesClosedR
+  saySmall:
+  - shapeIndex: 5
+    shapeName: Genesis3Male__eCTRLvW
+    percentage: 30
+  - shapeIndex: 6
+    shapeName: Genesis3Male__eCTRLvUW
+    percentage: 30
+  - shapeIndex: 14
+    shapeName: Genesis3Male__eCTRLvK
+    percentage: 20
+  sayMedium:
+  - shapeIndex: 15
+    shapeName: Genesis3Male__eCTRLvIY
+    percentage: 60
+  - shapeIndex: 21
+    shapeName: Genesis3Male__eCTRLvAA
+    percentage: 50
+  - shapeIndex: 35
+    shapeName: Genesis3Male__eCTRLMouthSmileOpen
+    percentage: 20
+  - shapeIndex: 36
+    shapeName: Genesis3Male__eCTRLMouthSmile
+    percentage: 40
+  - shapeIndex: 50
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownR
+    percentage: 20
+  - shapeIndex: 51
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownL
+    percentage: 20
+  - shapeIndex: 60
+    shapeName: Genesis3Male__eCTRLLipBottomUp-DownR
+    percentage: 20
+  - shapeIndex: 61
+    shapeName: Genesis3Male__eCTRLLipBottomUp-DownL
+    percentage: 20
+  sayLarge:
+  - shapeIndex: 7
+    shapeName: Genesis3Male__eCTRLvTH
+    percentage: 100
+  - shapeIndex: 11
+    shapeName: Genesis3Male__eCTRLvOW
+    percentage: 60
+  - shapeIndex: 20
+    shapeName: Genesis3Male__eCTRLvEE
+    percentage: 50
+  - shapeIndex: 50
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownR
+    percentage: 35
+  shapeNames:
+  - Genesis3Male__eCTRLSurprised
+  - Genesis3Male__eCTRLSmile
+  - Genesis3Male__eCTRLFrown
+  - Genesis3Male__eCTRLFlirting
+  - Genesis3Male__eCTRLAngry
+  - Genesis3Male__eCTRLvW
+  - Genesis3Male__eCTRLvUW
+  - Genesis3Male__eCTRLvTH
+  - Genesis3Male__eCTRLvT
+  - Genesis3Male__eCTRLvSH
+  - Genesis3Male__eCTRLvS
+  - Genesis3Male__eCTRLvOW
+  - Genesis3Male__eCTRLvM
+  - Genesis3Male__eCTRLvL
+  - Genesis3Male__eCTRLvK
+  - Genesis3Male__eCTRLvIY
+  - Genesis3Male__eCTRLvIH
+  - Genesis3Male__eCTRLvF
+  - Genesis3Male__eCTRLvER
+  - Genesis3Male__eCTRLvEH
+  - Genesis3Male__eCTRLvEE
+  - Genesis3Male__eCTRLvAA
+  - Genesis3Male__eCTRLTongueUp-Down
+  - Genesis3Male__eCTRLTongueSide-Side
+  - Genesis3Male__eCTRLTongueRaise-Lower
+  - Genesis3Male__eCTRLTongueNarrow-Wide
+  - Genesis3Male__eCTRLTongueIn-Out
+  - Genesis3Male__eCTRLTongueBendTip
+  - Genesis3Male__eCTRLTongue Curl
+  - Genesis3Male__eCTRLNostrilsFlare
+  - Genesis3Male__eCTRLNoseWrinkle
+  - Genesis3Male__eCTRLNoseScrunch
+  - Genesis3Male__eCTRLMouthSmileSimpleR
+  - Genesis3Male__eCTRLMouthSmileSimpleL
+  - Genesis3Male__eCTRLMouthSmileSimple
+  - Genesis3Male__eCTRLMouthSmileOpen
+  - Genesis3Male__eCTRLMouthSmile
+  - Genesis3Male__eCTRLMouthSide-SideR
+  - Genesis3Male__eCTRLMouthSide-SideL
+  - Genesis3Male__eCTRLMouthSide-Side
+  - Genesis3Male__eCTRLMouthOpenWide
+  - Genesis3Male__eCTRLMouthOpen
+  - Genesis3Male__eCTRLMouthNarrowR
+  - Genesis3Male__eCTRLMouthNarrowL
+  - Genesis3Male__eCTRLMouthNarrow
+  - Genesis3Male__eCTRLMouthFrown
+  - Genesis3Male__eCTRLMouthCornerUp-Down
+  - Genesis3Male__eCTRLMouthCornerBackR
+  - Genesis3Male__eCTRLMouthCornerBackL
+  - Genesis3Male__eCTRLMouthCornerBack
+  - Genesis3Male__eCTRLLipTopUp-DownR
+  - Genesis3Male__eCTRLLipTopUp-DownL
+  - Genesis3Male__eCTRLLipTopUp-Down
+  - Genesis3Male__eCTRLLipTopIn-OutR
+  - Genesis3Male__eCTRLLipTopIn-OutL
+  - Genesis3Male__eCTRLLipTopIn-Out
+  - Genesis3Male__eCTRLLipsPuckerWide
+  - Genesis3Male__eCTRLLipsPucker
+  - Genesis3Male__eCTRLLipsPartCenter
+  - Genesis3Male__eCTRLLipsPart
+  - Genesis3Male__eCTRLLipBottomUp-DownR
+  - Genesis3Male__eCTRLLipBottomUp-DownL
+  - Genesis3Male__eCTRLLipBottomUp-Down
+  - Genesis3Male__eCTRLLipBottomIn-OutR
+  - Genesis3Male__eCTRLLipBottomIn-OutL
+  - Genesis3Male__eCTRLLipBottomIn-Out
+  - Genesis3Male__eCTRLJawSide-Side
+  - Genesis3Male__eCTRLJawOut-In
+  - Genesis3Male__eCTRLEyesUpDown
+  - Genesis3Male__eCTRLEyesSquintR
+  - Genesis3Male__eCTRLEyesSquintL
+  - Genesis3Male__eCTRLEyesSquint
+  - Genesis3Male__eCTRLEyesSideSide
+  - Genesis3Male__eCTRLEyesCrossed
+  - Genesis3Male__eCTRLEyesClosedR
+  - Genesis3Male__eCTRLEyesClosedL
+  - Genesis3Male__eCTRLEyesClosed
+  - Genesis3Male__eCTRLEyelidsUpperDownUpR
+  - Genesis3Male__eCTRLEyelidsUpperDownUpL
+  - Genesis3Male__eCTRLEyelidsUpperDownUp
+  - Genesis3Male__eCTRLEyelidsLowerUpDownR
+  - Genesis3Male__eCTRLEyelidsLowerUpDownL
+  - Genesis3Male__eCTRLEyelidsLowerUpDown
+  - Genesis3Male__eCTRLCheeksBalloonPucker
+  - Genesis3Male__eCTRLCheeksBalloon
+  - Genesis3Male__eCTRLCheekFlexR
+  - Genesis3Male__eCTRLCheekFlexL
+  - Genesis3Male__eCTRLCheekFlex
+  - Genesis3Male__eCTRLCheekEyeFlexR
+  - Genesis3Male__eCTRLCheekEyeFlexL
+  - Genesis3Male__eCTRLCheekEyeFlex
+  - Genesis3Male__eCTRLCheekCrease
+  - Genesis3Male__eCTRLBrowUp-DownR
+  - Genesis3Male__eCTRLBrowUp-DownL
+  - Genesis3Male__eCTRLBrowUp-Down
+  - Genesis3Male__eCTRLBrowSqueeze
+  - Genesis3Male__eCTRLBrowOuterUp-DownR
+  - Genesis3Male__eCTRLBrowOuterUp-DownL
+  - Genesis3Male__eCTRLBrowOuterUp-Down
+  - Genesis3Male__eCTRLBrowInnerUp-DownR
+  - Genesis3Male__eCTRLBrowInnerUp-DownL
+  - Genesis3Male__eCTRLBrowInnerUp-Down
+  - head__eCTRLSurprised
+  - head__eCTRLSmile
+  - head__eCTRLFrown
+  - head__eCTRLFlirting
+  - head__eCTRLAngry
+  - head__eCTRLvW
+  - head__eCTRLvUW
+  - head__eCTRLvTH
+  - head__eCTRLvT
+  - head__eCTRLvSH
+  - head__eCTRLvS
+  - head__eCTRLvOW
+  - head__eCTRLvM
+  - head__eCTRLvL
+  - head__eCTRLvK
+  - head__eCTRLvIY
+  - head__eCTRLvIH
+  - head__eCTRLvF
+  - head__eCTRLvER
+  - head__eCTRLvEH
+  - head__eCTRLvEE
+  - head__eCTRLvAA
+  - head__eCTRLTongueUp-Down
+  - head__eCTRLTongueSide-Side
+  - head__eCTRLTongueRaise-Lower
+  - head__eCTRLTongueNarrow-Wide
+  - head__eCTRLTongueIn-Out
+  - head__eCTRLTongueBendTip
+  - head__eCTRLTongue Curl
+  - head__eCTRLNostrilsFlare
+  - head__eCTRLNoseWrinkle
+  - head__eCTRLNoseScrunch
+  - head__eCTRLMouthSmileSimpleR
+  - head__eCTRLMouthSmileSimpleL
+  - head__eCTRLMouthSmileSimple
+  - head__eCTRLMouthSmileOpen
+  - head__eCTRLMouthSmile
+  - head__eCTRLMouthSide-SideR
+  - head__eCTRLMouthSide-SideL
+  - head__eCTRLMouthSide-Side
+  - head__eCTRLMouthOpenWide
+  - head__eCTRLMouthOpen
+  - head__eCTRLMouthNarrowR
+  - head__eCTRLMouthNarrowL
+  - head__eCTRLMouthNarrow
+  - head__eCTRLMouthFrown
+  - head__eCTRLMouthCornerUp-Down
+  - head__eCTRLMouthCornerBackR
+  - head__eCTRLMouthCornerBackL
+  - head__eCTRLMouthCornerBack
+  - head__eCTRLLipTopUp-DownR
+  - head__eCTRLLipTopUp-DownL
+  - head__eCTRLLipTopUp-Down
+  - head__eCTRLLipTopIn-OutR
+  - head__eCTRLLipTopIn-OutL
+  - head__eCTRLLipTopIn-Out
+  - head__eCTRLLipsPuckerWide
+  - head__eCTRLLipsPucker
+  - head__eCTRLLipsPartCenter
+  - head__eCTRLLipsPart
+  - head__eCTRLLipBottomUp-DownR
+  - head__eCTRLLipBottomUp-DownL
+  - head__eCTRLLipBottomUp-Down
+  - head__eCTRLLipBottomIn-OutR
+  - head__eCTRLLipBottomIn-OutL
+  - head__eCTRLLipBottomIn-Out
+  - head__eCTRLJawSide-Side
+  - head__eCTRLJawOut-In
+  - head__eCTRLEyesUpDown
+  - head__eCTRLEyesSquintR
+  - head__eCTRLEyesSquintL
+  - head__eCTRLEyesSquint
+  - head__eCTRLEyesSideSide
+  - head__eCTRLEyesCrossed
+  - head__eCTRLEyesClosedR
+  - head__eCTRLEyesClosedL
+  - head__eCTRLEyesClosed
+  - head__eCTRLEyelidsUpperDownUpR
+  - head__eCTRLEyelidsUpperDownUpL
+  - head__eCTRLEyelidsUpperDownUp
+  - head__eCTRLEyelidsLowerUpDownR
+  - head__eCTRLEyelidsLowerUpDownL
+  - head__eCTRLEyelidsLowerUpDown
+  - head__eCTRLCheeksBalloonPucker
+  - head__eCTRLCheeksBalloon
+  - head__eCTRLCheekFlexR
+  - head__eCTRLCheekFlexL
+  - head__eCTRLCheekFlex
+  - head__eCTRLCheekEyeFlexR
+  - head__eCTRLCheekEyeFlexL
+  - head__eCTRLCheekEyeFlex
+  - head__eCTRLCheekCrease
+  - head__eCTRLBrowUp-DownR
+  - head__eCTRLBrowUp-DownL
+  - head__eCTRLBrowUp-Down
+  - head__eCTRLBrowSqueeze
+  - head__eCTRLBrowOuterUp-DownR
+  - head__eCTRLBrowOuterUp-DownL
+  - head__eCTRLBrowOuterUp-Down
+  - head__eCTRLBrowInnerUp-DownR
+  - head__eCTRLBrowInnerUp-DownL
+  - head__eCTRLBrowInnerUp-Down
+  initialize: 0
+  dazType: 3
+  prevType: 3
+--- !u!114 &742268426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1624661579, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salsa3D: {fileID: 742268429}
+  skinnedMeshRenderer: {fileID: 739976886}
+  prevSkinnedMeshRenderer: {fileID: 739976886}
+  getSkndMshRndr: 0
+  blendShapes:
+  - Genesis3Male__eCTRLSurprised
+  - Genesis3Male__eCTRLSmile
+  - Genesis3Male__eCTRLFrown
+  - Genesis3Male__eCTRLFlirting
+  - Genesis3Male__eCTRLAngry
+  - Genesis3Male__eCTRLvW
+  - Genesis3Male__eCTRLvUW
+  - Genesis3Male__eCTRLvTH
+  - Genesis3Male__eCTRLvT
+  - Genesis3Male__eCTRLvSH
+  - Genesis3Male__eCTRLvS
+  - Genesis3Male__eCTRLvOW
+  - Genesis3Male__eCTRLvM
+  - Genesis3Male__eCTRLvL
+  - Genesis3Male__eCTRLvK
+  - Genesis3Male__eCTRLvIY
+  - Genesis3Male__eCTRLvIH
+  - Genesis3Male__eCTRLvF
+  - Genesis3Male__eCTRLvER
+  - Genesis3Male__eCTRLvEH
+  - Genesis3Male__eCTRLvEE
+  - Genesis3Male__eCTRLvAA
+  - Genesis3Male__eCTRLTongueUp-Down
+  - Genesis3Male__eCTRLTongueSide-Side
+  - Genesis3Male__eCTRLTongueRaise-Lower
+  - Genesis3Male__eCTRLTongueNarrow-Wide
+  - Genesis3Male__eCTRLTongueIn-Out
+  - Genesis3Male__eCTRLTongueBendTip
+  - Genesis3Male__eCTRLTongue Curl
+  - Genesis3Male__eCTRLNostrilsFlare
+  - Genesis3Male__eCTRLNoseWrinkle
+  - Genesis3Male__eCTRLNoseScrunch
+  - Genesis3Male__eCTRLMouthSmileSimpleR
+  - Genesis3Male__eCTRLMouthSmileSimpleL
+  - Genesis3Male__eCTRLMouthSmileSimple
+  - Genesis3Male__eCTRLMouthSmileOpen
+  - Genesis3Male__eCTRLMouthSmile
+  - Genesis3Male__eCTRLMouthSide-SideR
+  - Genesis3Male__eCTRLMouthSide-SideL
+  - Genesis3Male__eCTRLMouthSide-Side
+  - Genesis3Male__eCTRLMouthOpenWide
+  - Genesis3Male__eCTRLMouthOpen
+  - Genesis3Male__eCTRLMouthNarrowR
+  - Genesis3Male__eCTRLMouthNarrowL
+  - Genesis3Male__eCTRLMouthNarrow
+  - Genesis3Male__eCTRLMouthFrown
+  - Genesis3Male__eCTRLMouthCornerUp-Down
+  - Genesis3Male__eCTRLMouthCornerBackR
+  - Genesis3Male__eCTRLMouthCornerBackL
+  - Genesis3Male__eCTRLMouthCornerBack
+  - Genesis3Male__eCTRLLipTopUp-DownR
+  - Genesis3Male__eCTRLLipTopUp-DownL
+  - Genesis3Male__eCTRLLipTopUp-Down
+  - Genesis3Male__eCTRLLipTopIn-OutR
+  - Genesis3Male__eCTRLLipTopIn-OutL
+  - Genesis3Male__eCTRLLipTopIn-Out
+  - Genesis3Male__eCTRLLipsPuckerWide
+  - Genesis3Male__eCTRLLipsPucker
+  - Genesis3Male__eCTRLLipsPartCenter
+  - Genesis3Male__eCTRLLipsPart
+  - Genesis3Male__eCTRLLipBottomUp-DownR
+  - Genesis3Male__eCTRLLipBottomUp-DownL
+  - Genesis3Male__eCTRLLipBottomUp-Down
+  - Genesis3Male__eCTRLLipBottomIn-OutR
+  - Genesis3Male__eCTRLLipBottomIn-OutL
+  - Genesis3Male__eCTRLLipBottomIn-Out
+  - Genesis3Male__eCTRLJawSide-Side
+  - Genesis3Male__eCTRLJawOut-In
+  - Genesis3Male__eCTRLEyesUpDown
+  - Genesis3Male__eCTRLEyesSquintR
+  - Genesis3Male__eCTRLEyesSquintL
+  - Genesis3Male__eCTRLEyesSquint
+  - Genesis3Male__eCTRLEyesSideSide
+  - Genesis3Male__eCTRLEyesCrossed
+  - Genesis3Male__eCTRLEyesClosedR
+  - Genesis3Male__eCTRLEyesClosedL
+  - Genesis3Male__eCTRLEyesClosed
+  - Genesis3Male__eCTRLEyelidsUpperDownUpR
+  - Genesis3Male__eCTRLEyelidsUpperDownUpL
+  - Genesis3Male__eCTRLEyelidsUpperDownUp
+  - Genesis3Male__eCTRLEyelidsLowerUpDownR
+  - Genesis3Male__eCTRLEyelidsLowerUpDownL
+  - Genesis3Male__eCTRLEyelidsLowerUpDown
+  - Genesis3Male__eCTRLCheeksBalloonPucker
+  - Genesis3Male__eCTRLCheeksBalloon
+  - Genesis3Male__eCTRLCheekFlexR
+  - Genesis3Male__eCTRLCheekFlexL
+  - Genesis3Male__eCTRLCheekFlex
+  - Genesis3Male__eCTRLCheekEyeFlexR
+  - Genesis3Male__eCTRLCheekEyeFlexL
+  - Genesis3Male__eCTRLCheekEyeFlex
+  - Genesis3Male__eCTRLCheekCrease
+  - Genesis3Male__eCTRLBrowUp-DownR
+  - Genesis3Male__eCTRLBrowUp-DownL
+  - Genesis3Male__eCTRLBrowUp-Down
+  - Genesis3Male__eCTRLBrowSqueeze
+  - Genesis3Male__eCTRLBrowOuterUp-DownR
+  - Genesis3Male__eCTRLBrowOuterUp-DownL
+  - Genesis3Male__eCTRLBrowOuterUp-Down
+  - Genesis3Male__eCTRLBrowInnerUp-DownR
+  - Genesis3Male__eCTRLBrowInnerUp-DownL
+  - Genesis3Male__eCTRLBrowInnerUp-Down
+  - head__eCTRLSurprised
+  - head__eCTRLSmile
+  - head__eCTRLFrown
+  - head__eCTRLFlirting
+  - head__eCTRLAngry
+  - head__eCTRLvW
+  - head__eCTRLvUW
+  - head__eCTRLvTH
+  - head__eCTRLvT
+  - head__eCTRLvSH
+  - head__eCTRLvS
+  - head__eCTRLvOW
+  - head__eCTRLvM
+  - head__eCTRLvL
+  - head__eCTRLvK
+  - head__eCTRLvIY
+  - head__eCTRLvIH
+  - head__eCTRLvF
+  - head__eCTRLvER
+  - head__eCTRLvEH
+  - head__eCTRLvEE
+  - head__eCTRLvAA
+  - head__eCTRLTongueUp-Down
+  - head__eCTRLTongueSide-Side
+  - head__eCTRLTongueRaise-Lower
+  - head__eCTRLTongueNarrow-Wide
+  - head__eCTRLTongueIn-Out
+  - head__eCTRLTongueBendTip
+  - head__eCTRLTongue Curl
+  - head__eCTRLNostrilsFlare
+  - head__eCTRLNoseWrinkle
+  - head__eCTRLNoseScrunch
+  - head__eCTRLMouthSmileSimpleR
+  - head__eCTRLMouthSmileSimpleL
+  - head__eCTRLMouthSmileSimple
+  - head__eCTRLMouthSmileOpen
+  - head__eCTRLMouthSmile
+  - head__eCTRLMouthSide-SideR
+  - head__eCTRLMouthSide-SideL
+  - head__eCTRLMouthSide-Side
+  - head__eCTRLMouthOpenWide
+  - head__eCTRLMouthOpen
+  - head__eCTRLMouthNarrowR
+  - head__eCTRLMouthNarrowL
+  - head__eCTRLMouthNarrow
+  - head__eCTRLMouthFrown
+  - head__eCTRLMouthCornerUp-Down
+  - head__eCTRLMouthCornerBackR
+  - head__eCTRLMouthCornerBackL
+  - head__eCTRLMouthCornerBack
+  - head__eCTRLLipTopUp-DownR
+  - head__eCTRLLipTopUp-DownL
+  - head__eCTRLLipTopUp-Down
+  - head__eCTRLLipTopIn-OutR
+  - head__eCTRLLipTopIn-OutL
+  - head__eCTRLLipTopIn-Out
+  - head__eCTRLLipsPuckerWide
+  - head__eCTRLLipsPucker
+  - head__eCTRLLipsPartCenter
+  - head__eCTRLLipsPart
+  - head__eCTRLLipBottomUp-DownR
+  - head__eCTRLLipBottomUp-DownL
+  - head__eCTRLLipBottomUp-Down
+  - head__eCTRLLipBottomIn-OutR
+  - head__eCTRLLipBottomIn-OutL
+  - head__eCTRLLipBottomIn-Out
+  - head__eCTRLJawSide-Side
+  - head__eCTRLJawOut-In
+  - head__eCTRLEyesUpDown
+  - head__eCTRLEyesSquintR
+  - head__eCTRLEyesSquintL
+  - head__eCTRLEyesSquint
+  - head__eCTRLEyesSideSide
+  - head__eCTRLEyesCrossed
+  - head__eCTRLEyesClosedR
+  - head__eCTRLEyesClosedL
+  - head__eCTRLEyesClosed
+  - head__eCTRLEyelidsUpperDownUpR
+  - head__eCTRLEyelidsUpperDownUpL
+  - head__eCTRLEyelidsUpperDownUp
+  - head__eCTRLEyelidsLowerUpDownR
+  - head__eCTRLEyelidsLowerUpDownL
+  - head__eCTRLEyelidsLowerUpDown
+  - head__eCTRLCheeksBalloonPucker
+  - head__eCTRLCheeksBalloon
+  - head__eCTRLCheekFlexR
+  - head__eCTRLCheekFlexL
+  - head__eCTRLCheekFlex
+  - head__eCTRLCheekEyeFlexR
+  - head__eCTRLCheekEyeFlexL
+  - head__eCTRLCheekEyeFlex
+  - head__eCTRLCheekCrease
+  - head__eCTRLBrowUp-DownR
+  - head__eCTRLBrowUp-DownL
+  - head__eCTRLBrowUp-Down
+  - head__eCTRLBrowSqueeze
+  - head__eCTRLBrowOuterUp-DownR
+  - head__eCTRLBrowOuterUp-DownL
+  - head__eCTRLBrowOuterUp-Down
+  - head__eCTRLBrowInnerUp-DownR
+  - head__eCTRLBrowInnerUp-DownL
+  - head__eCTRLBrowInnerUp-Down
+  lookUpIndex: 0
+  lookDownIndex: 0
+  lookLeftIndex: 0
+  lookRightIndex: 0
+  blinkIndex: 0
+  lookRandPosition: {x: 0, y: 0, z: 0}
+  lookAmount:
+    lookUp: 0
+    lookDown: 0
+    lookLeft: 0
+    lookRight: 0
+    blink: 0
+  randomEyes: 1
+  maxRandomInterval: 3
+  blendSpeed: 15
+  rangeOfMotion: 50
+  blinkDuration: 0.05
+  blinkSpeed: 50
+  openMax: 5
+  closeMax: 100
+  eyePosition: {fileID: 1070262570}
+  eyePosVerify: {fileID: 0}
+  lookTarget: {fileID: 0}
+  lookTargetTracking: {fileID: 0}
+  targetAffinity: 0
+  targetAffinityPercentage: 0.5
+  invertTracking: 0
+  trackBehind: 1
+  randomBlink: 1
+  maxBlinkInterval: 5
+  broadcastNeeded: 0
+  broadcastCS: 0
+  broadcastCSReceiversCount: 0
+  prevBroadcastCSReceiversCount: 0
+  expandBroadcastCS: 0
+  broadcastCSReceivers: []
+  propagateToChildrenCS: 0
+  selectedCustomShape: 204
+  noneShapeIndex: 204
+  excludeEyeShapes: 1
+  dynamicCustomShapes:
+  - Genesis3Male__eCTRLSurprised
+  - Genesis3Male__eCTRLSmile
+  - Genesis3Male__eCTRLFrown
+  - Genesis3Male__eCTRLFlirting
+  - Genesis3Male__eCTRLAngry
+  - Genesis3Male__eCTRLvW
+  - Genesis3Male__eCTRLvUW
+  - Genesis3Male__eCTRLvTH
+  - Genesis3Male__eCTRLvT
+  - Genesis3Male__eCTRLvSH
+  - Genesis3Male__eCTRLvS
+  - Genesis3Male__eCTRLvOW
+  - Genesis3Male__eCTRLvM
+  - Genesis3Male__eCTRLvL
+  - Genesis3Male__eCTRLvK
+  - Genesis3Male__eCTRLvIY
+  - Genesis3Male__eCTRLvIH
+  - Genesis3Male__eCTRLvF
+  - Genesis3Male__eCTRLvER
+  - Genesis3Male__eCTRLvEH
+  - Genesis3Male__eCTRLvEE
+  - Genesis3Male__eCTRLvAA
+  - Genesis3Male__eCTRLTongueUp-Down
+  - Genesis3Male__eCTRLTongueSide-Side
+  - Genesis3Male__eCTRLTongueRaise-Lower
+  - Genesis3Male__eCTRLTongueNarrow-Wide
+  - Genesis3Male__eCTRLTongueIn-Out
+  - Genesis3Male__eCTRLTongueBendTip
+  - Genesis3Male__eCTRLTongue Curl
+  - Genesis3Male__eCTRLNostrilsFlare
+  - Genesis3Male__eCTRLNoseWrinkle
+  - Genesis3Male__eCTRLNoseScrunch
+  - Genesis3Male__eCTRLMouthSmileSimpleR
+  - Genesis3Male__eCTRLMouthSmileSimpleL
+  - Genesis3Male__eCTRLMouthSmileSimple
+  - Genesis3Male__eCTRLMouthSmileOpen
+  - Genesis3Male__eCTRLMouthSmile
+  - Genesis3Male__eCTRLMouthSide-SideR
+  - Genesis3Male__eCTRLMouthSide-SideL
+  - Genesis3Male__eCTRLMouthSide-Side
+  - Genesis3Male__eCTRLMouthOpenWide
+  - Genesis3Male__eCTRLMouthOpen
+  - Genesis3Male__eCTRLMouthNarrowR
+  - Genesis3Male__eCTRLMouthNarrowL
+  - Genesis3Male__eCTRLMouthNarrow
+  - Genesis3Male__eCTRLMouthFrown
+  - Genesis3Male__eCTRLMouthCornerUp-Down
+  - Genesis3Male__eCTRLMouthCornerBackR
+  - Genesis3Male__eCTRLMouthCornerBackL
+  - Genesis3Male__eCTRLMouthCornerBack
+  - Genesis3Male__eCTRLLipTopUp-DownR
+  - Genesis3Male__eCTRLLipTopUp-DownL
+  - Genesis3Male__eCTRLLipTopUp-Down
+  - Genesis3Male__eCTRLLipTopIn-OutR
+  - Genesis3Male__eCTRLLipTopIn-OutL
+  - Genesis3Male__eCTRLLipTopIn-Out
+  - Genesis3Male__eCTRLLipsPuckerWide
+  - Genesis3Male__eCTRLLipsPucker
+  - Genesis3Male__eCTRLLipsPartCenter
+  - Genesis3Male__eCTRLLipsPart
+  - Genesis3Male__eCTRLLipBottomUp-DownR
+  - Genesis3Male__eCTRLLipBottomUp-DownL
+  - Genesis3Male__eCTRLLipBottomUp-Down
+  - Genesis3Male__eCTRLLipBottomIn-OutR
+  - Genesis3Male__eCTRLLipBottomIn-OutL
+  - Genesis3Male__eCTRLLipBottomIn-Out
+  - Genesis3Male__eCTRLJawSide-Side
+  - Genesis3Male__eCTRLJawOut-In
+  - Genesis3Male__eCTRLEyesUpDown
+  - Genesis3Male__eCTRLEyesSquintR
+  - Genesis3Male__eCTRLEyesSquintL
+  - Genesis3Male__eCTRLEyesSquint
+  - Genesis3Male__eCTRLEyesSideSide
+  - Genesis3Male__eCTRLEyesCrossed
+  - Genesis3Male__eCTRLEyesClosedR
+  - Genesis3Male__eCTRLEyesClosedL
+  - Genesis3Male__eCTRLEyesClosed
+  - Genesis3Male__eCTRLEyelidsUpperDownUpR
+  - Genesis3Male__eCTRLEyelidsUpperDownUpL
+  - Genesis3Male__eCTRLEyelidsUpperDownUp
+  - Genesis3Male__eCTRLEyelidsLowerUpDownR
+  - Genesis3Male__eCTRLEyelidsLowerUpDownL
+  - Genesis3Male__eCTRLEyelidsLowerUpDown
+  - Genesis3Male__eCTRLCheeksBalloonPucker
+  - Genesis3Male__eCTRLCheeksBalloon
+  - Genesis3Male__eCTRLCheekFlexR
+  - Genesis3Male__eCTRLCheekFlexL
+  - Genesis3Male__eCTRLCheekFlex
+  - Genesis3Male__eCTRLCheekEyeFlexR
+  - Genesis3Male__eCTRLCheekEyeFlexL
+  - Genesis3Male__eCTRLCheekEyeFlex
+  - Genesis3Male__eCTRLCheekCrease
+  - Genesis3Male__eCTRLBrowUp-DownR
+  - Genesis3Male__eCTRLBrowUp-DownL
+  - Genesis3Male__eCTRLBrowUp-Down
+  - Genesis3Male__eCTRLBrowSqueeze
+  - Genesis3Male__eCTRLBrowOuterUp-DownR
+  - Genesis3Male__eCTRLBrowOuterUp-DownL
+  - Genesis3Male__eCTRLBrowOuterUp-Down
+  - Genesis3Male__eCTRLBrowInnerUp-DownR
+  - Genesis3Male__eCTRLBrowInnerUp-DownL
+  - Genesis3Male__eCTRLBrowInnerUp-Down
+  - head__eCTRLSurprised
+  - head__eCTRLSmile
+  - head__eCTRLFrown
+  - head__eCTRLFlirting
+  - head__eCTRLAngry
+  - head__eCTRLvW
+  - head__eCTRLvUW
+  - head__eCTRLvTH
+  - head__eCTRLvT
+  - head__eCTRLvSH
+  - head__eCTRLvS
+  - head__eCTRLvOW
+  - head__eCTRLvM
+  - head__eCTRLvL
+  - head__eCTRLvK
+  - head__eCTRLvIY
+  - head__eCTRLvIH
+  - head__eCTRLvF
+  - head__eCTRLvER
+  - head__eCTRLvEH
+  - head__eCTRLvEE
+  - head__eCTRLvAA
+  - head__eCTRLTongueUp-Down
+  - head__eCTRLTongueSide-Side
+  - head__eCTRLTongueRaise-Lower
+  - head__eCTRLTongueNarrow-Wide
+  - head__eCTRLTongueIn-Out
+  - head__eCTRLTongueBendTip
+  - head__eCTRLTongue Curl
+  - head__eCTRLNostrilsFlare
+  - head__eCTRLNoseWrinkle
+  - head__eCTRLNoseScrunch
+  - head__eCTRLMouthSmileSimpleR
+  - head__eCTRLMouthSmileSimpleL
+  - head__eCTRLMouthSmileSimple
+  - head__eCTRLMouthSmileOpen
+  - head__eCTRLMouthSmile
+  - head__eCTRLMouthSide-SideR
+  - head__eCTRLMouthSide-SideL
+  - head__eCTRLMouthSide-Side
+  - head__eCTRLMouthOpenWide
+  - head__eCTRLMouthOpen
+  - head__eCTRLMouthNarrowR
+  - head__eCTRLMouthNarrowL
+  - head__eCTRLMouthNarrow
+  - head__eCTRLMouthFrown
+  - head__eCTRLMouthCornerUp-Down
+  - head__eCTRLMouthCornerBackR
+  - head__eCTRLMouthCornerBackL
+  - head__eCTRLMouthCornerBack
+  - head__eCTRLLipTopUp-DownR
+  - head__eCTRLLipTopUp-DownL
+  - head__eCTRLLipTopUp-Down
+  - head__eCTRLLipTopIn-OutR
+  - head__eCTRLLipTopIn-OutL
+  - head__eCTRLLipTopIn-Out
+  - head__eCTRLLipsPuckerWide
+  - head__eCTRLLipsPucker
+  - head__eCTRLLipsPartCenter
+  - head__eCTRLLipsPart
+  - head__eCTRLLipBottomUp-DownR
+  - head__eCTRLLipBottomUp-DownL
+  - head__eCTRLLipBottomUp-Down
+  - head__eCTRLLipBottomIn-OutR
+  - head__eCTRLLipBottomIn-OutL
+  - head__eCTRLLipBottomIn-Out
+  - head__eCTRLJawSide-Side
+  - head__eCTRLJawOut-In
+  - head__eCTRLEyesUpDown
+  - head__eCTRLEyesSquintR
+  - head__eCTRLEyesSquintL
+  - head__eCTRLEyesSquint
+  - head__eCTRLEyesSideSide
+  - head__eCTRLEyesCrossed
+  - head__eCTRLEyesClosedR
+  - head__eCTRLEyesClosedL
+  - head__eCTRLEyesClosed
+  - head__eCTRLEyelidsUpperDownUpR
+  - head__eCTRLEyelidsUpperDownUpL
+  - head__eCTRLEyelidsUpperDownUp
+  - head__eCTRLEyelidsLowerUpDownR
+  - head__eCTRLEyelidsLowerUpDownL
+  - head__eCTRLEyelidsLowerUpDown
+  - head__eCTRLCheeksBalloonPucker
+  - head__eCTRLCheeksBalloon
+  - head__eCTRLCheekFlexR
+  - head__eCTRLCheekFlexL
+  - head__eCTRLCheekFlex
+  - head__eCTRLCheekEyeFlexR
+  - head__eCTRLCheekEyeFlexL
+  - head__eCTRLCheekEyeFlex
+  - head__eCTRLCheekCrease
+  - head__eCTRLBrowUp-DownR
+  - head__eCTRLBrowUp-DownL
+  - head__eCTRLBrowUp-Down
+  - head__eCTRLBrowSqueeze
+  - head__eCTRLBrowOuterUp-DownR
+  - head__eCTRLBrowOuterUp-DownL
+  - head__eCTRLBrowOuterUp-Down
+  - head__eCTRLBrowInnerUp-DownR
+  - head__eCTRLBrowInnerUp-DownL
+  - head__eCTRLBrowInnerUp-Down
+  - None
+  customShapeCount: 204
+  expandCustomShapes: 0
+  customShapes:
+  - shapeIndex: 0
+    shapeName: Genesis3Male__eCTRLSurprised
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 1
+    shapeName: Genesis3Male__eCTRLSmile
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 2
+    shapeName: Genesis3Male__eCTRLFrown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 3
+    shapeName: Genesis3Male__eCTRLFlirting
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 4
+    shapeName: Genesis3Male__eCTRLAngry
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 5
+    shapeName: Genesis3Male__eCTRLvW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 6
+    shapeName: Genesis3Male__eCTRLvUW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 7
+    shapeName: Genesis3Male__eCTRLvTH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 8
+    shapeName: Genesis3Male__eCTRLvT
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 9
+    shapeName: Genesis3Male__eCTRLvSH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 10
+    shapeName: Genesis3Male__eCTRLvS
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 11
+    shapeName: Genesis3Male__eCTRLvOW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 12
+    shapeName: Genesis3Male__eCTRLvM
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 13
+    shapeName: Genesis3Male__eCTRLvL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 14
+    shapeName: Genesis3Male__eCTRLvK
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 15
+    shapeName: Genesis3Male__eCTRLvIY
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 16
+    shapeName: Genesis3Male__eCTRLvIH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 17
+    shapeName: Genesis3Male__eCTRLvF
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 18
+    shapeName: Genesis3Male__eCTRLvER
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 19
+    shapeName: Genesis3Male__eCTRLvEH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 20
+    shapeName: Genesis3Male__eCTRLvEE
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 21
+    shapeName: Genesis3Male__eCTRLvAA
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 22
+    shapeName: Genesis3Male__eCTRLTongueUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 23
+    shapeName: Genesis3Male__eCTRLTongueSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 24
+    shapeName: Genesis3Male__eCTRLTongueRaise-Lower
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 25
+    shapeName: Genesis3Male__eCTRLTongueNarrow-Wide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 26
+    shapeName: Genesis3Male__eCTRLTongueIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 27
+    shapeName: Genesis3Male__eCTRLTongueBendTip
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 28
+    shapeName: Genesis3Male__eCTRLTongue Curl
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 29
+    shapeName: Genesis3Male__eCTRLNostrilsFlare
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 30
+    shapeName: Genesis3Male__eCTRLNoseWrinkle
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 31
+    shapeName: Genesis3Male__eCTRLNoseScrunch
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 32
+    shapeName: Genesis3Male__eCTRLMouthSmileSimpleR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 33
+    shapeName: Genesis3Male__eCTRLMouthSmileSimpleL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 34
+    shapeName: Genesis3Male__eCTRLMouthSmileSimple
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 35
+    shapeName: Genesis3Male__eCTRLMouthSmileOpen
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 36
+    shapeName: Genesis3Male__eCTRLMouthSmile
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 37
+    shapeName: Genesis3Male__eCTRLMouthSide-SideR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 38
+    shapeName: Genesis3Male__eCTRLMouthSide-SideL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 39
+    shapeName: Genesis3Male__eCTRLMouthSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 40
+    shapeName: Genesis3Male__eCTRLMouthOpenWide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 41
+    shapeName: Genesis3Male__eCTRLMouthOpen
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 42
+    shapeName: Genesis3Male__eCTRLMouthNarrowR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 43
+    shapeName: Genesis3Male__eCTRLMouthNarrowL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 44
+    shapeName: Genesis3Male__eCTRLMouthNarrow
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 45
+    shapeName: Genesis3Male__eCTRLMouthFrown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 46
+    shapeName: Genesis3Male__eCTRLMouthCornerUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 47
+    shapeName: Genesis3Male__eCTRLMouthCornerBackR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 48
+    shapeName: Genesis3Male__eCTRLMouthCornerBackL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 49
+    shapeName: Genesis3Male__eCTRLMouthCornerBack
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 50
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 51
+    shapeName: Genesis3Male__eCTRLLipTopUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 52
+    shapeName: Genesis3Male__eCTRLLipTopUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 53
+    shapeName: Genesis3Male__eCTRLLipTopIn-OutR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 54
+    shapeName: Genesis3Male__eCTRLLipTopIn-OutL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 55
+    shapeName: Genesis3Male__eCTRLLipTopIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 56
+    shapeName: Genesis3Male__eCTRLLipsPuckerWide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 57
+    shapeName: Genesis3Male__eCTRLLipsPucker
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 58
+    shapeName: Genesis3Male__eCTRLLipsPartCenter
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 59
+    shapeName: Genesis3Male__eCTRLLipsPart
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 60
+    shapeName: Genesis3Male__eCTRLLipBottomUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 61
+    shapeName: Genesis3Male__eCTRLLipBottomUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 62
+    shapeName: Genesis3Male__eCTRLLipBottomUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 63
+    shapeName: Genesis3Male__eCTRLLipBottomIn-OutR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 64
+    shapeName: Genesis3Male__eCTRLLipBottomIn-OutL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 65
+    shapeName: Genesis3Male__eCTRLLipBottomIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 66
+    shapeName: Genesis3Male__eCTRLJawSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 67
+    shapeName: Genesis3Male__eCTRLJawOut-In
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 68
+    shapeName: Genesis3Male__eCTRLEyesUpDown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 69
+    shapeName: Genesis3Male__eCTRLEyesSquintR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 70
+    shapeName: Genesis3Male__eCTRLEyesSquintL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 71
+    shapeName: Genesis3Male__eCTRLEyesSquint
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 72
+    shapeName: Genesis3Male__eCTRLEyesSideSide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 73
+    shapeName: Genesis3Male__eCTRLEyesCrossed
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 74
+    shapeName: Genesis3Male__eCTRLEyesClosedR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 75
+    shapeName: Genesis3Male__eCTRLEyesClosedL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 76
+    shapeName: Genesis3Male__eCTRLEyesClosed
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 77
+    shapeName: Genesis3Male__eCTRLEyelidsUpperDownUpR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 78
+    shapeName: Genesis3Male__eCTRLEyelidsUpperDownUpL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 79
+    shapeName: Genesis3Male__eCTRLEyelidsUpperDownUp
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 80
+    shapeName: Genesis3Male__eCTRLEyelidsLowerUpDownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 81
+    shapeName: Genesis3Male__eCTRLEyelidsLowerUpDownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 82
+    shapeName: Genesis3Male__eCTRLEyelidsLowerUpDown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 83
+    shapeName: Genesis3Male__eCTRLCheeksBalloonPucker
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 84
+    shapeName: Genesis3Male__eCTRLCheeksBalloon
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 85
+    shapeName: Genesis3Male__eCTRLCheekFlexR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 86
+    shapeName: Genesis3Male__eCTRLCheekFlexL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 87
+    shapeName: Genesis3Male__eCTRLCheekFlex
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 88
+    shapeName: Genesis3Male__eCTRLCheekEyeFlexR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 89
+    shapeName: Genesis3Male__eCTRLCheekEyeFlexL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 90
+    shapeName: Genesis3Male__eCTRLCheekEyeFlex
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 91
+    shapeName: Genesis3Male__eCTRLCheekCrease
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 92
+    shapeName: Genesis3Male__eCTRLBrowUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 93
+    shapeName: Genesis3Male__eCTRLBrowUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 94
+    shapeName: Genesis3Male__eCTRLBrowUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 95
+    shapeName: Genesis3Male__eCTRLBrowSqueeze
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 96
+    shapeName: Genesis3Male__eCTRLBrowOuterUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 97
+    shapeName: Genesis3Male__eCTRLBrowOuterUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 98
+    shapeName: Genesis3Male__eCTRLBrowOuterUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 99
+    shapeName: Genesis3Male__eCTRLBrowInnerUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 100
+    shapeName: Genesis3Male__eCTRLBrowInnerUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 101
+    shapeName: Genesis3Male__eCTRLBrowInnerUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 102
+    shapeName: head__eCTRLSurprised
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 103
+    shapeName: head__eCTRLSmile
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 104
+    shapeName: head__eCTRLFrown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 105
+    shapeName: head__eCTRLFlirting
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 106
+    shapeName: head__eCTRLAngry
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 107
+    shapeName: head__eCTRLvW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 108
+    shapeName: head__eCTRLvUW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 109
+    shapeName: head__eCTRLvTH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 110
+    shapeName: head__eCTRLvT
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 111
+    shapeName: head__eCTRLvSH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 112
+    shapeName: head__eCTRLvS
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 113
+    shapeName: head__eCTRLvOW
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 114
+    shapeName: head__eCTRLvM
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 115
+    shapeName: head__eCTRLvL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 116
+    shapeName: head__eCTRLvK
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 117
+    shapeName: head__eCTRLvIY
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 118
+    shapeName: head__eCTRLvIH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 119
+    shapeName: head__eCTRLvF
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 120
+    shapeName: head__eCTRLvER
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 121
+    shapeName: head__eCTRLvEH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 122
+    shapeName: head__eCTRLvEE
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 123
+    shapeName: head__eCTRLvAA
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 124
+    shapeName: head__eCTRLTongueUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 125
+    shapeName: head__eCTRLTongueSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 126
+    shapeName: head__eCTRLTongueRaise-Lower
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 127
+    shapeName: head__eCTRLTongueNarrow-Wide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 128
+    shapeName: head__eCTRLTongueIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 129
+    shapeName: head__eCTRLTongueBendTip
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 130
+    shapeName: head__eCTRLTongue Curl
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 131
+    shapeName: head__eCTRLNostrilsFlare
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 132
+    shapeName: head__eCTRLNoseWrinkle
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 133
+    shapeName: head__eCTRLNoseScrunch
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 134
+    shapeName: head__eCTRLMouthSmileSimpleR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 135
+    shapeName: head__eCTRLMouthSmileSimpleL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 136
+    shapeName: head__eCTRLMouthSmileSimple
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 137
+    shapeName: head__eCTRLMouthSmileOpen
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 138
+    shapeName: head__eCTRLMouthSmile
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 139
+    shapeName: head__eCTRLMouthSide-SideR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 140
+    shapeName: head__eCTRLMouthSide-SideL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 141
+    shapeName: head__eCTRLMouthSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 142
+    shapeName: head__eCTRLMouthOpenWide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 143
+    shapeName: head__eCTRLMouthOpen
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 144
+    shapeName: head__eCTRLMouthNarrowR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 145
+    shapeName: head__eCTRLMouthNarrowL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 146
+    shapeName: head__eCTRLMouthNarrow
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 147
+    shapeName: head__eCTRLMouthFrown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 148
+    shapeName: head__eCTRLMouthCornerUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 149
+    shapeName: head__eCTRLMouthCornerBackR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 150
+    shapeName: head__eCTRLMouthCornerBackL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 151
+    shapeName: head__eCTRLMouthCornerBack
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 152
+    shapeName: head__eCTRLLipTopUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 153
+    shapeName: head__eCTRLLipTopUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 154
+    shapeName: head__eCTRLLipTopUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 155
+    shapeName: head__eCTRLLipTopIn-OutR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 156
+    shapeName: head__eCTRLLipTopIn-OutL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 157
+    shapeName: head__eCTRLLipTopIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 158
+    shapeName: head__eCTRLLipsPuckerWide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 159
+    shapeName: head__eCTRLLipsPucker
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 160
+    shapeName: head__eCTRLLipsPartCenter
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 161
+    shapeName: head__eCTRLLipsPart
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 162
+    shapeName: head__eCTRLLipBottomUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 163
+    shapeName: head__eCTRLLipBottomUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 164
+    shapeName: head__eCTRLLipBottomUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 165
+    shapeName: head__eCTRLLipBottomIn-OutR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 166
+    shapeName: head__eCTRLLipBottomIn-OutL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 167
+    shapeName: head__eCTRLLipBottomIn-Out
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 168
+    shapeName: head__eCTRLJawSide-Side
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 169
+    shapeName: head__eCTRLJawOut-In
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 170
+    shapeName: head__eCTRLEyesUpDown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 171
+    shapeName: head__eCTRLEyesSquintR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 172
+    shapeName: head__eCTRLEyesSquintL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 173
+    shapeName: head__eCTRLEyesSquint
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 174
+    shapeName: head__eCTRLEyesSideSide
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 175
+    shapeName: head__eCTRLEyesCrossed
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 176
+    shapeName: head__eCTRLEyesClosedR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 177
+    shapeName: head__eCTRLEyesClosedL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 178
+    shapeName: head__eCTRLEyesClosed
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 179
+    shapeName: head__eCTRLEyelidsUpperDownUpR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 180
+    shapeName: head__eCTRLEyelidsUpperDownUpL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 181
+    shapeName: head__eCTRLEyelidsUpperDownUp
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 182
+    shapeName: head__eCTRLEyelidsLowerUpDownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 183
+    shapeName: head__eCTRLEyelidsLowerUpDownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 184
+    shapeName: head__eCTRLEyelidsLowerUpDown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 185
+    shapeName: head__eCTRLCheeksBalloonPucker
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 186
+    shapeName: head__eCTRLCheeksBalloon
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 187
+    shapeName: head__eCTRLCheekFlexR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 188
+    shapeName: head__eCTRLCheekFlexL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 189
+    shapeName: head__eCTRLCheekFlex
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 190
+    shapeName: head__eCTRLCheekEyeFlexR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 191
+    shapeName: head__eCTRLCheekEyeFlexL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 192
+    shapeName: head__eCTRLCheekEyeFlex
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 193
+    shapeName: head__eCTRLCheekCrease
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 194
+    shapeName: head__eCTRLBrowUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 195
+    shapeName: head__eCTRLBrowUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 196
+    shapeName: head__eCTRLBrowUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 197
+    shapeName: head__eCTRLBrowSqueeze
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 198
+    shapeName: head__eCTRLBrowOuterUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 199
+    shapeName: head__eCTRLBrowOuterUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 200
+    shapeName: head__eCTRLBrowOuterUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 201
+    shapeName: head__eCTRLBrowInnerUp-DownR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 202
+    shapeName: head__eCTRLBrowInnerUp-DownL
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 203
+    shapeName: head__eCTRLBrowInnerUp-Down
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  randomCustomShapes: 1
+  maxCustomShapeInterval: 3
+  randomCSBlendSpeedMin: 0.75
+  randomCSBlendSpeedMax: 2
+  randomCSRangeOfMotionMin: 10
+  randomCSRangeOfMotionMax: 40
+  randomCSDurationMin: 0.25
+  randomCSDurationMax: 2.5
+  csNotRandomToggle: 1
+  useCustomShapesOnly: 1
+  showEyeShapes: 1
+  showTracking: 1
+  showEyeProps: 1
+  showCustom: 1
+  showBroadcast: 1
+  showBroadcastCS: 0
+  expandShapeGroups: 0
+  groups: []
+  shapeGroupCount: 0
+--- !u!114 &742268427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1624661579, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salsa3D: {fileID: 0}
+  skinnedMeshRenderer: {fileID: 0}
+  prevSkinnedMeshRenderer: {fileID: 0}
+  getSkndMshRndr: 0
+  blendShapes: []
+  lookUpIndex: 0
+  lookDownIndex: 0
+  lookLeftIndex: 0
+  lookRightIndex: 0
+  blinkIndex: 0
+  lookRandPosition: {x: 0, y: 0, z: 0}
+  lookAmount:
+    lookUp: 0.42735794
+    lookDown: 0
+    lookLeft: 0
+    lookRight: 0
+    blink: 0
+  randomEyes: 1
+  maxRandomInterval: 3
+  blendSpeed: 95
+  rangeOfMotion: 100
+  blinkDuration: 0.03
+  blinkSpeed: 30
+  openMax: 5
+  closeMax: 100
+  eyePosition: {fileID: 1070262570}
+  eyePosVerify: {fileID: 1070262570}
+  lookTarget: {fileID: 564624671}
+  lookTargetTracking: {fileID: 564624671}
+  targetAffinity: 0
+  targetAffinityPercentage: 0.95
+  invertTracking: 0
+  trackBehind: 1
+  randomBlink: 1
+  maxBlinkInterval: 5
+  broadcastNeeded: 0
+  broadcastCS: 0
+  broadcastCSReceiversCount: 0
+  prevBroadcastCSReceiversCount: 0
+  expandBroadcastCS: 0
+  broadcastCSReceivers: []
+  propagateToChildrenCS: 0
+  selectedCustomShape: 0
+  noneShapeIndex: 0
+  excludeEyeShapes: 1
+  dynamicCustomShapes: []
+  customShapeCount: 0
+  expandCustomShapes: 0
+  customShapes: []
+  randomCustomShapes: 1
+  maxCustomShapeInterval: 3
+  randomCSBlendSpeedMin: 0.75
+  randomCSBlendSpeedMax: 2
+  randomCSRangeOfMotionMin: 10
+  randomCSRangeOfMotionMax: 40
+  randomCSDurationMin: 0.25
+  randomCSDurationMax: 2.5
+  csNotRandomToggle: 0
+  useCustomShapesOnly: 0
+  showEyeShapes: 1
+  showTracking: 1
+  showEyeProps: 1
+  showCustom: 1
+  showBroadcast: 1
+  showBroadcastCS: 1
+  expandShapeGroups: 0
+  groups: []
+  shapeGroupCount: 0
+--- !u!82 &742268428
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 0
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &742268429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1976067524, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skinnedMeshRenderer: {fileID: 0}
+  prevSkinnedMeshRenderer: {fileID: 0}
+  getSkndMshRndr: 0
+  audioSrc: {fileID: 742268428}
+  audioClip: {fileID: 0}
+  blendShapes: []
+  saySmallIndex: 0
+  sayMediumIndex: 0
+  sayLargeIndex: 0
+  saySmallTrigger: 0.0005
+  sayMediumTrigger: 0.0025
+  sayLargeTrigger: 0.005
+  audioUpdateDelay: 0.08
+  blendSpeed: 10
+  rangeOfMotion: 75
+  isTalking: 0
+  prevIsTalking: 0
+  broadcast: 0
+  broadcastReceiversCount: 1
+  expandBroadcast: 0
+  broadcastReceivers: []
+  propagateToChildren: 0
+  average: 0
+  say: 
+  sayIndex: 0
+  sayAmount:
+    saySmall: 0
+    sayMedium: 0
+    sayLarge: 0
+  prevAudioUpdateDelay: 0
+--- !u!114 &742268432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742268424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8defa93f33bd41e47998ce59a0e3983e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixationPoint: {fileID: 564624671}
+  needsAssist: 0
+  referencingObject: 0
+  expectsResponse: 0
+  isAttentive: 0
 --- !u!1 &807289980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,7 +4814,7 @@ Transform:
   m_GameObject: {fileID: 807289980}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 682607685}
   m_RootOrder: 0
@@ -1693,6 +4866,10 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: assist
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627634424735680, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
@@ -1790,7 +4967,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1016206798}
   m_Layer: 0
-  m_Name: InterlocutorFixationPoint
+  m_Name: PhoneDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1803,11 +4980,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1016206797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.5}
+  m_LocalPosition: {x: 0, y: 0, z: 10.253}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034429914
 GameObject:
@@ -1827,7 +5004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1034429915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1916,13 +5093,54 @@ RectTransform:
   - {fileID: 691246918}
   - {fileID: 1817895411}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1070262570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1070262571}
+  - component: {fileID: 1070262572}
+  m_Layer: 0
+  m_Name: RandomEyes3D_Eye_Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1070262571
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070262570}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0653242, z: 0.08103939}
+  m_LocalScale: {x: 0.022546142, y: 0.0225461, z: 0.0225461}
+  m_Children: []
+  m_Father: {fileID: 739142046}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1070262572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1070262570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -818653955, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showGizmo: 1
 --- !u!1 &1070810872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,7 +5167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1100069162 stripped
 GameObject:
@@ -1961,6 +5179,97 @@ Transform:
   m_PrefabParentObject: {fileID: 4716866640238420, guid: 0c5986fdb5ae4474c823925c0b1854da,
     type: 2}
   m_PrefabInternal: {fileID: 807427922}
+--- !u!1 &1125159900 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100218, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+  m_PrefabInternal: {fileID: 2054739296}
+--- !u!1 &1191212612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1191212616}
+  - component: {fileID: 1191212615}
+  - component: {fileID: 1191212614}
+  - component: {fileID: 1191212613}
+  m_Layer: 0
+  m_Name: Plane (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1191212613
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1191212612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1191212614
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1191212612}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: ebf99b7d5bdd3aa48b8fe4364de766fe, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1191212615
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1191212612}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1191212616
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1191212612}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: -90}
+  m_LocalScale: {x: 3, y: 1, z: 2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!1 &1225720844
 GameObject:
   m_ObjectHideFlags: 0
@@ -2010,9 +5319,9 @@ Camera:
     y: 0
     width: 0.5
     height: 1
-  near clip plane: 12
+  near clip plane: 80
   far clip plane: 1000
-  field of view: 26
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: 5
@@ -2037,11 +5346,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1225720844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 12.15, y: -2.26, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1225720849
 MonoBehaviour:
@@ -2630,7 +5939,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2662,13 +5971,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1563910563}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: -0, y: -0.83280057, z: -0, w: 0.5535732}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -112.77501, z: 0}
 --- !u!1 &1568146048
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,7 +6068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2854,6 +6163,177 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1669268093}
+--- !u!1 &1713520868
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1713520872}
+  - component: {fileID: 1713520871}
+  - component: {fileID: 1713520870}
+  - component: {fileID: 1713520869}
+  m_Layer: 0
+  m_Name: Plane (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1713520869
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713520868}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1713520870
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713520868}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: ebf99b7d5bdd3aa48b8fe4364de766fe, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1713520871
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713520868}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1713520872
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713520868}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 10, z: -40}
+  m_LocalScale: {x: 2, y: 1, z: 10}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+--- !u!1 &1767268508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1767268512}
+  - component: {fileID: 1767268511}
+  - component: {fileID: 1767268510}
+  - component: {fileID: 1767268509}
+  m_Layer: 0
+  m_Name: PhoneProjectionRect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1767268509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767268508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1767268510
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767268508}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials: []
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1767268511
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767268508}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1767268512
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767268508}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 11, y: 6.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1780512529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2944,7 +6424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2965,6 +6445,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1780512529}
+--- !u!1 &1799215622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1799215625}
+  - component: {fileID: 1799215624}
+  - component: {fileID: 1799215623}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1799215623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799215622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 120
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 120
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1799215624
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799215622}
+--- !u!224 &1799215625
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1799215622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 735623716}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1817895407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3167,6 +6721,93 @@ Transform:
   m_PrefabParentObject: {fileID: 4306261106618200, guid: bfa5ae8035586e644a78dd7622dc6c24,
     type: 2}
   m_PrefabInternal: {fileID: 16472305}
+--- !u!1 &1855422041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1855422045}
+  - component: {fileID: 1855422044}
+  - component: {fileID: 1855422043}
+  - component: {fileID: 1855422042}
+  m_Layer: 0
+  m_Name: Plane (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!64 &1855422042
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855422041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1855422043
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855422041}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: ebf99b7d5bdd3aa48b8fe4364de766fe, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1855422044
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855422041}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1855422045
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1855422041}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -10, y: 0, z: -40}
+  m_LocalScale: {x: 3, y: 1, z: 10}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1856448388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3328,12 +6969,12 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 200
-  field of view: 7
+  near clip plane: 5
+  far clip plane: 609.91
+  field of view: 10
   orthographic: 0
   orthographic size: 1.5
-  m_Depth: 9
+  m_Depth: 11
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3355,11 +6996,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1900423167}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 17.6}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 682607685}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &1900423172
 MonoBehaviour:
@@ -3367,23 +7008,27 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1900423167}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 445246d53a2daa044a2551ca30fa1e1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyes: {fileID: 1016206797}
+  target: {fileID: 1016206797}
 --- !u!114 &1900423173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1900423167}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1c26b2f24c37a84793956b62025d96a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  virtualWindow: {fileID: 1016206797}
+  width: 11
+  height: 6.5
+  MaxHeight: 2000
 --- !u!1 &1956205200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3397,7 +7042,7 @@ GameObject:
   - component: {fileID: 1956205202}
   - component: {fileID: 1956205201}
   m_Layer: 0
-  m_Name: TextRepresentation
+  m_Name: zTextRepresentation
   m_TagString: Augmentation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3409,7 +7054,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1956205200}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18c876919a325ec4abede455fed56387, type: 3}
   m_Name: 
@@ -3423,6 +7068,7 @@ MonoBehaviour:
   refText: {fileID: 1010180420}
   resText: {fileID: 332977133}
   attText: {fileID: 1827820097}
+  text: {fileID: 0}
 --- !u!23 &1956205202
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3494,94 +7140,7 @@ Transform:
   - {fileID: 332977134}
   - {fileID: 1827820098}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!1 &1988632756
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1988632760}
-  - component: {fileID: 1988632759}
-  - component: {fileID: 1988632758}
-  - component: {fileID: 1988632757}
-  m_Layer: 0
-  m_Name: PhoneDisplay
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!64 &1988632757
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1988632756}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &1988632758
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1988632756}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1988632759
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1988632756}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1988632760
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1988632756}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1, z: 0.62}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &2009432203
 GameObject:
@@ -3819,6 +7378,64 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c5986fdb5ae4474c823925c0b1854da, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &2054739296
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -170
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b3c4d06429b76d04bb03ba6c0e5a050e, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &2121325272
 GameObject:
   m_ObjectHideFlags: 0
@@ -3903,13 +7520,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2121325272}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

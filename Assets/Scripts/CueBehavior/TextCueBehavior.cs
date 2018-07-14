@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TextCueBehavior : CueBehavior
 {
@@ -10,43 +11,68 @@ public class TextCueBehavior : CueBehavior
     public GameObject resText;
     public GameObject attText;
 
+    public Text text;
+
     public override void Start()
     {
         base.Start();
-        GetComponent<Renderer>().material.color = Color.black;
     }
 
     protected override void SetNeedsAssist(bool needsAssist)
     {
         base.SetNeedsAssist(needsAssist);
-        assText.SetActive(needsAssist);
+        if (needsAssist)
+        {
+            text.text = "Help";
+        }
+        else
+        {
+            SetNeutral();
+        }
     }
 
     protected override void SetReferencingObject(bool referencingObject)
     {
         base.SetReferencingObject(referencingObject);
-        refText.SetActive(referencingObject);
+        if (referencingObject)
+        {
+            text.text = "This one";
+        }
+        else
+        {
+            SetNeutral();
+        }
     }
 
     protected override void SetIsAttentive(bool isAttentive)
     {
         base.SetIsAttentive(isAttentive);
-        attText.SetActive(isAttentive);
-
+        if (isAttentive)
+        {
+            text.text = "Not Attentive";
+        }
+        else
+        {
+            SetNeutral();
+        }
     }
 
     protected override void SetExpectsResponse(bool expectsResponse)
     {
         base.SetExpectsResponse(expectsResponse);
-        resText.SetActive(expectsResponse);
+        if (expectsResponse)
+        {
+            text.text = "Your Turn";
+        }
+        else
+        {
+            SetNeutral();
+        }
 
     }
 
     protected override void SetNeutral()
     {
-        attText.SetActive(false);
-        refText.SetActive(false);
-        resText.SetActive(false);
-        assText.SetActive(false);
+        text.text = " ";
     }
 }

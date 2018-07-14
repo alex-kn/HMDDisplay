@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Controls the cues that the augmentation is displaying. Only one cue can be active at a time.
+ */
 public abstract class CueBehavior : MonoBehaviour {
 
     public GameObject fixationPoint;
@@ -16,7 +19,6 @@ public abstract class CueBehavior : MonoBehaviour {
     public virtual void Start()
     {
         fixationPointMovement = fixationPoint.GetComponent<FixationPointMovement>();
-        //ResetCues();
     }
 
     protected virtual void SetNeedsAssist(bool needsAssist)
@@ -44,33 +46,78 @@ public abstract class CueBehavior : MonoBehaviour {
     }
 
 
-    public void ResetCues()
-    {
-        SetNeedsAssist(false);
-        SetIsAttentive(false);
-        SetReferencingObject(false);
-        SetExpectsResponse(false);
-    }
-
     protected abstract void SetNeutral();
 
     public void ToggleNeedsAssist()
     {
+        SetIsAttentive(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
         SetNeedsAssist(!needsAssist);
     }
 
     public void ToggleReferencingObject()
     {
+        SetNeedsAssist(false);
+        SetIsAttentive(false);
+        SetExpectsResponse(false);
         SetReferencingObject(!referencingObject);
     }
 
     public void ToggleExpectsResponse()
     {
+        SetNeedsAssist(false);
+        SetIsAttentive(false);
+        SetReferencingObject(false);
         SetExpectsResponse(!expectsResponse);
     }
 
     public void ToggleIsAttentive()
     {
+        SetNeedsAssist(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
         SetIsAttentive(!isAttentive);
+    }
+
+
+    public void NeedsAssist()
+    {
+        SetIsAttentive(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
+        SetNeedsAssist(true);
+    }
+
+    public void ReferencingObject()
+    {
+        SetNeedsAssist(false);
+        SetIsAttentive(false);
+        SetExpectsResponse(false);
+        SetReferencingObject(true);
+    }
+
+    public void ExpectsResponse()
+    {
+        SetNeedsAssist(false);
+        SetIsAttentive(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(true);
+    }
+
+    public void NotAttentive()
+    {
+        SetNeedsAssist(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
+        SetIsAttentive(true);
+    }
+
+    public void ResetCues()
+    {
+        SetNeedsAssist(false);
+        SetReferencingObject(false);
+        SetExpectsResponse(false);
+        SetIsAttentive(false);
     }
 }

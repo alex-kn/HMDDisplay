@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Controls the Motion of the FixationPoint.
+ * The FixationPoint is the Spot the Eyes are lookint at at any time.
+ */
 public class FixationPointMovement : MonoBehaviour {
 
     public GameObject interlocutorPosition;
@@ -18,9 +22,9 @@ public class FixationPointMovement : MonoBehaviour {
     {
         FixateInterlocutorPosition();
         topFixationPoint = new GameObject();
-        topFixationPoint.transform.position = new Vector3(0f, 12f, 15f);
+        topFixationPoint.transform.position = new Vector3(0f, 80f, 100f);
         frontFixationPoint = new GameObject();
-        frontFixationPoint.transform.position = new Vector3(0f, 0f, 15f);
+        frontFixationPoint.transform.position = new Vector3(0f, 0f, 500f);
 
     }
 

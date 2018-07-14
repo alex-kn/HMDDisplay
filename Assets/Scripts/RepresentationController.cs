@@ -14,13 +14,16 @@ public class RepresentationController : MonoBehaviour {
 
     public Button switchRepresentationButton;
 
+    public InterlocutorPosition interlocutorPosition;
+
     void Start () {
-        //cueClickController = cueControl.GetComponent<CueClickController>();
         switchRepresentationButton.onClick.AddListener(SwitchRepresentation);
         foreach (GameObject representation in representations)
         {
             representation.SetActive(false);
         }
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        switchRepresentationButton.GetComponentInChildren<Text>().text = "";
     }
 
     public void SwitchRepresentation()
@@ -29,6 +32,16 @@ public class RepresentationController : MonoBehaviour {
         activeRepIndex = (activeRepIndex + 1) % representations.Length;
         representations[activeRepIndex].SetActive(true);
         cueClickController.SetCueBehavior(representations[activeRepIndex].GetComponent<CueBehavior>());
+        if (activeRepIndex == 0)
+        {
+            interlocutorPosition.TurnOnFaceTracking();
+            
+        }
+        else
+        {
+            interlocutorPosition.TurnOffFaceTracking();
+            
+        }
     }
 
 }
