@@ -4544,7 +4544,7 @@ MonoBehaviour:
   lookTarget: {fileID: 564624671}
   lookTargetTracking: {fileID: 564624671}
   targetAffinity: 0
-  targetAffinityPercentage: 0.95
+  targetAffinityPercentage: 0.9
   invertTracking: 0
   trackBehind: 1
   randomBlink: 1

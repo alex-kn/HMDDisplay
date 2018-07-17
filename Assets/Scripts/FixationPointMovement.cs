@@ -14,6 +14,7 @@ public class FixationPointMovement : MonoBehaviour {
     private GameObject frontFixationPoint;
 
     private Transform target;
+    private float oldDelta;
 
     private float speed = 1000;
 
@@ -31,12 +32,28 @@ public class FixationPointMovement : MonoBehaviour {
     void Update()
     {
         float step = speed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+        if(Vector3.Distance(transform.position,target.position) > 30)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+
+        }
+
+        float x = Random.Range(0, 500);
+        if (x > 485)
+        {
+
+            float delta = Random.Range(-10, 10);
+            transform.Translate(new Vector3(delta - oldDelta, 0, 0));
+            oldDelta = delta;
+
+
+        }
     }
 
     public void FixateInterlocutorPosition()
     {
         target = interlocutorPosition.transform;
+        
     }
 
     public void FixateUpward()
