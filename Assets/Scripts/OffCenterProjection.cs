@@ -44,8 +44,6 @@ public class OffCenterProjection : MonoBehaviour
         float imageRight = (windowWidth / 2.0f) + newpos.x;
         float imageTop = (windowHeight / 2.0f) - newpos.y;  
         float imageBottom = (-windowHeight / 2.0f) - newpos.y;
-
-        // Intercept theorem
         float nearLeft = imageLeft / ratio;
         float nearRight = imageRight / ratio;
         float nearTop = imageTop / ratio;

@@ -12,7 +12,8 @@ public class InterlocutorPosition : MonoBehaviour
     bool isAndroid = false;
     Vector3 origPosition;
 
-    //this is a dummy cam used to convert the 2D point from face tracking to a 3D point in the scene
+    //this is a dummy cam used to convert the 2D point from face tracking to a 3D point in the scene, projecting the point on the near clip plane
+    //this cam's position coincides with the exact position of the front-camera of the phone attached to the HMD (because of the position offset)
     Camera phoneCam;
 
     public int phoneCameraWidth = 640;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TextCueBehavior : CueBehavior
+public class GermanTextCueBehavior : CueBehavior
 {
 
     public Text text;
@@ -18,7 +18,7 @@ public class TextCueBehavior : CueBehavior
         base.SetNeedsAssist(needsAssist);
         if (needsAssist)
         {
-            text.text = "Help";
+            text.text = "Hilfe";
         }
         else
         {
@@ -31,7 +31,7 @@ public class TextCueBehavior : CueBehavior
         base.SetReferencingObject(referencingObject);
         if (referencingObject)
         {
-            text.text = "This one";
+            text.text = "Das da";
         }
         else
         {
@@ -44,7 +44,7 @@ public class TextCueBehavior : CueBehavior
         base.SetIsAttentive(isAttentive);
         if (isAttentive)
         {
-            text.text = "Not Attentive";
+            text.text = "Nicht Aufmerksam";
         }
         else
         {
@@ -57,7 +57,7 @@ public class TextCueBehavior : CueBehavior
         base.SetExpectsResponse(expectsResponse);
         if (expectsResponse)
         {
-            text.text = "Your Turn";
+            text.text = "Du bist dran";
         }
         else
         {
