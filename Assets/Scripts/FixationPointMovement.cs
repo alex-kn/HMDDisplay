@@ -4,7 +4,8 @@ using UnityEngine;
 
 /**
  * Controls the Motion of the FixationPoint.
- * The FixationPoint is the Spot the Eyes are lookint at at any time.
+ * The FixationPoint is the Spot the Eyes are currently looking at.
+ * (e.g. the interlocutor's position or a spot straught ahead)
  */
 public class FixationPointMovement : MonoBehaviour {
 
@@ -35,18 +36,14 @@ public class FixationPointMovement : MonoBehaviour {
         if(Vector3.Distance(transform.position,target.position) > 30)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-
         }
 
         float x = Random.Range(0, 500);
         if (x > 485)
         {
-
             float delta = Random.Range(-10, 10);
             transform.Translate(new Vector3(delta - oldDelta, 0, 0));
             oldDelta = delta;
-
-
         }
     }
 

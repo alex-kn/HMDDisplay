@@ -6,11 +6,6 @@ using UnityEngine.UI;
 public class TextCueBehavior : CueBehavior
 {
 
-    public GameObject assText;
-    public GameObject refText;
-    public GameObject resText;
-    public GameObject attText;
-
     public Text text;
 
     public override void Start()

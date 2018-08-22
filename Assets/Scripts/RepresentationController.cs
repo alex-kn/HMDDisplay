@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/**
+ * Controls the currently shown augmentation
+ */
 public class RepresentationController : MonoBehaviour {
 
     public GameObject[] representations;
@@ -12,6 +15,8 @@ public class RepresentationController : MonoBehaviour {
 
     private int activeRepIndex = 0;
 
+    //this button is invisible and located in the center of the screen. 
+    //To change augmentation click in the center of the screen
     public Button switchRepresentationButton;
 
     public InterlocutorPosition interlocutorPosition;

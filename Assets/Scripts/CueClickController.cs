@@ -10,6 +10,8 @@ using UnityEngine.UI;
 public class CueClickController : MonoBehaviour
 {
 
+    //the four buttons are invisible in each of the four corners of the screen.
+    //allows for easy switching of cues
     public Button assistMeButton;
     public Button referenceObject;
     public Button respondToMeButton;
@@ -25,13 +27,13 @@ public class CueClickController : MonoBehaviour
         respondToMeButton.onClick.AddListener(RespondToMe);
         iAmAttentiveButton.onClick.AddListener(IAmAttentive);
 
-        //remove text which is only for testing purposes
         assistMeButton.GetComponentInChildren<Text>().text = "";
         referenceObject.GetComponentInChildren<Text>().text = "";
         respondToMeButton.GetComponentInChildren<Text>().text = "";
         iAmAttentiveButton.GetComponentInChildren<Text>().text = "";
     }
 
+    //called by bluetooth controls
     internal void ActivateCue(string cueCode)
     {
         Debug.Log("Activating Cue " + cueCode);
