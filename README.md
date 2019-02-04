@@ -1,4 +1,4 @@
-### HMDDisplay
+# HMDDisplay
 
 Unity3D project developed as part of my Master Thesis. This prototype shows a 3D model of a face on a screen attached to the outside of a head-mounted display and was used in the user study of the thesis to investigate its effects on collaboration in Mixed Presence Environments.
 
